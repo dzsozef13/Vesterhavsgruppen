@@ -21,7 +21,6 @@
   padding: 50px;
 
   a {
-    font-weight: bold;
     color: black;
 
     &.router-link-exact-active {

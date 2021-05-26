@@ -21,10 +21,6 @@
   padding: 50px;
 
   a {
-<<<<<<< HEAD
-=======
-    font-weight: 200;
->>>>>>> 5c04720a56c2344700837146ee8d46e2087e544e
     color: black;
 
     &.router-link-exact-active {

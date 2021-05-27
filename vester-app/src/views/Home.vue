@@ -28,20 +28,30 @@
         <Title ttlText="About"/>
         <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <SquareButton btnText="Bliv Spejder" route="/about"/>
-     </v-col>
-     <v-col id="about">
+      </v-col>
+      <v-col id="about">
         <div>img</div>
       </v-col>
     </v-row>
   </v-container>
 
   <v-container fluid style="max-width: unset; margin:0; padding:0;" id="badges">
-    <v-row lg="12" style="margin:0;" >
-      <v-col lg="12" style="padding:0;">
-      <div> img </div>
-      <div> img </div>
-      <div> img </div>
-      </v-col>
+    <v-row lg="12" style="margin:0;" id="badges">
+
+          <v-col lg="4" sm="12" align="center"> 
+            <v-img class="badge-svg" :src="require('../assets/badge-fire.svg')"></v-img>
+            <p class="badge-text">Adventure</p>
+          </v-col>
+          <v-col lg="4" align="center"> 
+            <v-img class="badge-svg" :src="require('../assets/badge-forest.svg')"></v-img> 
+            <p class="badge-text">Nature</p>
+            </v-col>
+          <v-col lg="4" align="center"> 
+            <v-img class="badge-svg" :src="require('../assets/badge-hands.svg')" >
+            </v-img>
+            <p class="badge-text">Friendship</p>
+          </v-col>
+          
     </v-row>
   </v-container>
 
@@ -125,5 +135,19 @@ export default {
 }
 #badges {
   min-height: 80vh;
+  display: flex;
+  align-items: center;
 }
+.badge-svg{
+  width: 25vw;
+}
+.badge-text{
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #303960;
+  letter-spacing: 2px;
+}
+
+
 </style>

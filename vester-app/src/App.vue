@@ -2,7 +2,7 @@
   <div id="app">
     <v-container class="hidden-sm-and-down" id="nav" style="max-width: unset;">
       <div>
-        <v-img :src="require('./assets/logo.svg')"></v-img>
+        <v-img id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
       <div>
         <router-link id="link" to="/">Home</router-link>
@@ -56,5 +56,14 @@
       color: #788DE5;
     }
   }
+@media screen and (max-width:600px) {
+  #logo{
+    width: 80%;
+    margin-left: 7vw;
+  }
+  #link{
+    display: none;
+  }
+}
 }
 </style>

@@ -27,8 +27,8 @@
   </v-container>
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
-    <v-row sm="12">
-      <v-col sm="12" id="about">
+    <v-row >
+      <v-col  id="about">
         <Title ttlText="About"/>
         <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <SquareButton btnText="Bliv Spejder" route="/about"/>
@@ -61,7 +61,7 @@
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row >
-      <v-col id="about">
+      <v-col >
         <div>img</div>
       </v-col>
       <v-col id="about">
@@ -151,6 +151,7 @@ export default {
   font-weight: bold;
   color: #303960;
   letter-spacing: 2px;
+  margin-top: 3vh;
 }
 #gradient-container{
   display: flex;
@@ -165,5 +166,13 @@ export default {
   background: rgb(48,57,96);
   background: linear-gradient(0deg, rgba(48,57,96,1) 0%, rgba(48,57,96,0) 100%);
 }
-
+@media screen and (max-width:600px) {
+  #badges{
+    flex-direction: column;
+    padding: 8vh 0 5vh 0;
+  }
+  .badge-svg{
+  width: 60vw;
+}
+}
 </style>

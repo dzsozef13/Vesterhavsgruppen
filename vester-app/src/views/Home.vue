@@ -17,7 +17,11 @@
   <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
     <v-row lg="12"  style="margin:0;" >
       <v-col lg="12"  style="padding:0;">
-        <v-img :src="require('../assets/Thumb.jpg')" id="video"></v-img>
+        <v-img :src="require('../assets/Thumb.jpg')" id="video">
+        <div id="gradient-container">
+          <div id="gradient"></div>
+        </div>
+        </v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -126,7 +130,7 @@ export default {
   justify-content: center;
 }
 #dark{
-  background-color: rgb(35, 33, 56) ;
+  background-color: #303960 ;
   color: #eee;
   height: 100vh;
 }
@@ -148,6 +152,18 @@ export default {
   color: #303960;
   letter-spacing: 2px;
 }
-
+#gradient-container{
+  display: flex;
+  align-items:flex-end;
+  height: 120vh;
+  width: 100vw;
+}
+#gradient{
+  height: 80vh;
+  width: 100vw;
+  z-index: 111;
+  background: rgb(48,57,96);
+  background: linear-gradient(0deg, rgba(48,57,96,1) 0%, rgba(48,57,96,0) 100%);
+}
 
 </style>

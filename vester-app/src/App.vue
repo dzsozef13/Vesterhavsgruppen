@@ -2,13 +2,13 @@
   <div id="app">
     <v-container class="hidden-sm-and-down" id="nav" style="max-width: unset;">
       <div>
-        Logo
+        <v-img :src="require('./assets/logo.svg')"></v-img>
       </div>
       <div>
-        <router-link to="/">Home</router-link>
-        <router-link to="/who">Gallery</router-link>
-        <router-link to="/what">Contact</router-link>
-        <router-link to="/contact" style="margin-left:32px; padding: 8px;background-color:#ddd;">For Members</router-link>
+        <router-link id="link" to="/">Home</router-link>
+        <router-link id="link" to="/who">Gallery</router-link>
+        <router-link id="link" to="/what">Contact</router-link>
+        <router-link id="link" to="/contact" style=" padding: 8px;background-color:#ddd;">For Members</router-link>
       </div>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
@@ -39,8 +39,12 @@
   z-index: 999;
   height: 80px;
   width: 100%;
-  padding: 0 16vw 0 16vw;
+  padding: 0 7vw 0 7vw;
   background-color: #eee;
+
+  #link{
+    margin-left: 4vw;
+  }
 
   a {
     font-weight: 400;

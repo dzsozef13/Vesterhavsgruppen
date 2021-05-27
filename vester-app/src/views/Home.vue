@@ -2,8 +2,8 @@
 <v-app id="home">
 
   <v-container class="section-1" style="max-width: unset; margin:0;">
-    <v-row>
-      <v-col class="asd">
+    <v-row id="mainrow">
+      <v-col class="asd" >
         <Title ttlText="Welkommen"/>
         <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <SquareButton btnText="Bliv Spejder" route="/about"/>
@@ -14,10 +14,22 @@
     </v-row>
   </v-container>
 
+  <v-container style="max-width: unset; margin:0; padding:0;">
+    <v-row lg="12" style="margin:0;" >
+      <v-col lg="12" style="padding:0;">
+        <v-img :src="require('../assets/Thumb.jpg')"></v-img>
+      </v-col>
+    </v-row>
+  </v-container>
+
   <v-container class="section-1" style="max-width: unset; margin:0;">
-    <Title ttlText="About"/>
-    <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-    <SquareButton btnText="Bliv Spejder" route="/about"/>
+    <v-row>
+      <v-col>
+        <Title ttlText="About"/>
+        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <SquareButton btnText="Bliv Spejder" route="/about"/>
+      </v-col>
+    </v-row>
   </v-container>
 
 </v-app>
@@ -47,7 +59,7 @@ export default {
   display: flex;
   align-items: left;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 24px 16vw 24px 16vw;
   margin: 0;
 }
@@ -63,6 +75,12 @@ export default {
   flex-direction: column;
   justify-items: center;
   height: max-content;
+}
+
+#mainrow{
+  display: flex;
+  align-items: center;
+
 }
 
 </style>

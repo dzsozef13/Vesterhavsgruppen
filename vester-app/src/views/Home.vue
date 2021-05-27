@@ -6,7 +6,7 @@
       <v-col class="asd" >
         <Title ttlText="Welkommen"/>
         <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+        <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col>
         <div>img</div>
@@ -27,7 +27,7 @@
       <v-col sm="12" id="about">
         <Title ttlText="About"/>
         <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+        <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col id="about">
         <div>img</div>
@@ -76,7 +76,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
-import SquareButton from '@/components/SquareButton.vue'
+import ButtonBlue from '@/components/ButtonBlue.vue'
+import ButtonWhite from '@/components/ButtonWhite.vue'
 
 export default {
   name: 'Home',
@@ -84,7 +85,8 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
-    SquareButton
+    ButtonBlue,
+    ButtonWhite
   }
 }
 </script>
@@ -146,7 +148,7 @@ export default {
   font-size: 2.5vw;
   font-weight: bold;
   color: #303960;
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 
 

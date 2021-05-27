@@ -1,22 +1,42 @@
 <template>
+<v-app>
+
   <div id="app">
-    <v-container class="hidden-sm-and-down" id="nav" style="max-width: unset;">
+    <v-container id="nav" style="max-width: unset;">
       <div>
-        <v-img id="logo" :src="require('./assets/logo.svg')"></v-img>
+        <v-img width="200px" id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
-      <div>
+      <div class="hidden-sm-and-down" >
         <router-link id="link" to="/">Home</router-link>
         <router-link id="link" to="/who">Gallery</router-link>
         <router-link id="link" to="/what">Contact</router-link>
-        <router-link id="link" to="/contact" style=" padding: 8px;background-color:#ddd;">For Members</router-link>
+        <!-- <router-link id="link" to="/" style=" padding: 8px;background-color:#ddd;">For Members</router-link> -->
       </div>
+      <ButtonBlueSmall class="hidden-sm-and-down" btnText="For Members" route="/"/>
+      <ButtonBlueSmall class="hidden-md-and-up" btnText="icon" route="/"/>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
       </div> -->
     </v-container>
     <router-view/>
   </div>
+
+</v-app>
 </template>
+
+<script>
+
+import ButtonBlueSmall from '@/components/ButtonBlueSmall.vue'
+
+export default {
+  name: 'App',
+  components: {
+    ButtonBlueSmall
+  }
+}
+
+</script>
+
 
 <style lang="scss">
 
@@ -53,10 +73,6 @@
   padding: 0 7vw 0 7vw;
   background-color: #eee;
 
-  #link{
-    margin-left: 4vw;
-  }
-
   a {
     font-weight: 400;
     color: #2c3e50;
@@ -67,14 +83,11 @@
       color: #788DE5;
     }
   }
+}
+
 @media screen and (max-width:600px) {
   #logo{
     width: 80%;
-    margin-left: 7vw;
   }
-  #link{
-    display: none;
-  }
-}
 }
 </style>

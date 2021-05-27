@@ -53,7 +53,7 @@ export default {
             font-family: 'Lato', sans-serif;
             font-size: 20px;
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 0;
             padding: 0 16px 0 16px;
             color: #303960;
         }

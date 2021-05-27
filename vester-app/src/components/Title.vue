@@ -13,12 +13,14 @@ export default {
 <style lang="scss">
     #title {
         text-align: left;
-        margin: 0 0 8px 0;
+        margin: 0 0 24px 0;
         padding: 0;
         h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 32px;
-            font-weight: 600;
+            // font-family: 'Sansita Swashed', cursive;
+            // font-family: 'Lato', sans-serif;
+            font-family: 'Merriweather', serif;
+            font-size: 40px;
+            font-weight: bold;
         }
     }
 

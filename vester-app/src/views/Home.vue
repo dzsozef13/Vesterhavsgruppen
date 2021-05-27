@@ -2,14 +2,13 @@
 <v-app id="home">
 
   <v-container class="section-1" style="max-width: unset; margin:0;">
-    <v-row id="main-row">
-      <v-col class="asd" lg="6" col="12">
-        <Title ttlText="Velkommen"/>
-        <Paragraph prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale.
-        Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
+    <v-row>
+      <v-col class="asd">
+        <Title ttlText="Welkommen"/>
+        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <SquareButton btnText="Bliv Spejder" route="/about"/>
       </v-col>
-      <v-col lg="6" class="yellow" col="12">
+      <v-col>
         <div>img</div>
       </v-col>
     </v-row>
@@ -49,7 +48,7 @@ export default {
   align-items: left;
   justify-content: center;
   min-height: 100vh;
-  padding: 8vh 10vw 0vh 10vw;
+  padding: 24px 16vw 24px 16vw;
   margin: 0;
 }
 
@@ -57,24 +56,13 @@ export default {
   @include section();
   background-color: #eee;
   color: rgb(35, 33, 56);
-
 }
 
 .asd {
   display: flex;
-  justify-items: center;
   flex-direction: column;
+  justify-items: center;
   height: max-content;
-  background-color: red;
 }
-        @media screen and (max-width:600px) {
-          .section-1{
-            flex-direction: column;
-          }
-
-          #main-row{
-            flex-direction: column;
-          }
-        }
 
 </style>

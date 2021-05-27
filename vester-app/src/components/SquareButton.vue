@@ -8,7 +8,6 @@
             >
                 <h4>{{ btnText }}</h4>
             </v-btn>
-            <span id="shadow"></span>
         </v-container>
     </router-link>
 </template>
@@ -36,7 +35,7 @@ export default {
         flex-direction: column;
         justify-content: center; 
         align-items: center;
-        width: 200px;
+        width: max-content;
         height: 72px;
         margin: 0;
         // style
@@ -55,13 +54,10 @@ export default {
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 2px;
+            padding: 0 16px 0 16px;
             color: #303960;
         }
-    }
-    #shadow {
-        width: 200px;
-        height: 8px;
-        background-color: #637CDF;
+        box-shadow: 0 8px 0 #637CDF;
     }
 }
 

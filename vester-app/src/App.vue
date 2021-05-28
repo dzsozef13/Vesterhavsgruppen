@@ -1,20 +1,26 @@
 <template>
-  <v-app>
-    <v-container class="hidden-sm-and-down" id="nav" style="max-width: unset;">
+<v-app>
+
+  <div id="app">
+    <v-container id="nav" style="max-width: unset;">
+
       <div>
-        <v-img id="logo" :src="require('./assets/logo.svg')"></v-img>
+        <v-img width="240px" id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
-      <div>
+      <div class="hidden-sm-and-down links" >
         <router-link id="link" to="/">Home</router-link>
         <router-link id="link" to="/who">Gallery</router-link>
         <router-link id="link" to="/what">Contact</router-link>
-        <router-link id="link" to="/contact" style=" padding: 8px;background-color:#ddd;">For Members</router-link>
+        <ButtonBlueSmall class="hidden-sm-and-down" style="margin-left: 32px;" btnText="For Members" route="/"/>
+        <!-- <router-link id="link" to="/" style=" padding: 8px;background-color:#ddd;">For Members</router-link> -->
       </div>
+      <ButtonBlueSmall class="hidden-md-and-up" btnText="icon" route="/"/>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
       </div> -->
     </v-container>
     <router-view/>
+
     <v-container style="max-width: unset; margin:0;" id="footer">
       <v-row id="inner-footer">
         <v-col lg="5" class="column-footer" id="first-column">
@@ -39,6 +45,20 @@
     </v-container>
   </v-app>
 </template>
+
+<script>
+
+import ButtonBlueSmall from '@/components/ButtonBlueSmall.vue'
+
+export default {
+  name: 'App',
+  components: {
+    ButtonBlueSmall
+  }
+}
+
+</script>
+
 
 <style lang="scss">
 //fonts
@@ -121,16 +141,22 @@
   width: 100%;
   padding: 0 7vw 0 7vw;
   background-color: #eee;
-}
-  #link{
-    margin-left: 4vw;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   a {
-    font-weight: 400;
-    color: #2c3e50;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 0;
     text-decoration: none;
-    padding: 0 8px 0 8px;
+    color: #303960;
+    padding: 0 16px 0 16px;
 
     &.router-link-exact-active {
       color: #788DE5;
@@ -140,10 +166,6 @@
 @media screen and (max-width:600px) {
   #logo{
     width: 80%;
-    margin-left: 7vw;
-  }
-  #link{
-    display: none;
   }
   h1{
     font-size: 1.5rem;
@@ -174,11 +196,12 @@
     #fb{
     padding: 3vh 0 0 0;
   }
-  #sponsor-logo{
+  #sponsor-logo {
     width: 10vh;
     height: 4vh;
   }
 
+}
 }
 
 </style>

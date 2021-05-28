@@ -1,12 +1,12 @@
 <template>
     <v-container id="paragraph">
-        <h3>{{ prgText }}</h3>
+        <h3 :style="{ 'color': color }">{{ prgText }}</h3>
     </v-container>
 </template>
 
 <script>
 export default {
-    props: ['prgText']
+    props: ['prgText', 'color']
 }
 </script>
 

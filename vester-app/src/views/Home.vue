@@ -4,9 +4,9 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
       <v-col class="asd" >
-        <Title ttlText="Welkommen"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+        <Title color="#303960" ttlText="Welkommen"/>
+        <Paragraph color="#303960" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col>
         <div>img</div>
@@ -27,11 +27,11 @@
   </v-container>
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
-    <v-row >
-      <v-col  id="about">
-        <Title ttlText="About"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+    <v-row sm="12">
+      <v-col sm="12" id="about">
+        <Title color="#F6F6F6" ttlText="About"/>
+        <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col id="about">
         <div>img</div>
@@ -65,9 +65,9 @@
         <div>img</div>
       </v-col>
       <v-col id="about">
-        <Title ttlText="About"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+        <Title color="#F6F6F6" ttlText="About"/>
+        <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
     </v-row>
   </v-container>
@@ -80,7 +80,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
-import SquareButton from '@/components/SquareButton.vue'
+import ButtonBlue from '@/components/ButtonBlue.vue'
+import ButtonWhite from '@/components/ButtonWhite.vue'
 
 export default {
   name: 'Home',
@@ -88,7 +89,8 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
-    SquareButton
+    ButtonBlue,
+    ButtonWhite
   }
 }
 </script>

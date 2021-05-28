@@ -1,13 +1,14 @@
 <template>
     <v-container id="title">
-        <h1>{{ ttlText }}</h1>
+        <h1 :style="{ 'color': color }">{{ ttlText }}</h1>
     </v-container>
 </template>
 
 <script>
 export default {
-    props: ['ttlText']
+    props: ['ttlText','color']
 }
+
 </script>
 
 <style lang="scss">

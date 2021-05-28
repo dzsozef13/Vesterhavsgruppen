@@ -1,6 +1,5 @@
 <template>
 <v-app>
-
   <div id="app">
     <v-container id="nav" style="max-width: unset;">
 
@@ -43,7 +42,8 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-app>
+  </div>
+</v-app>
 </template>
 
 <script>

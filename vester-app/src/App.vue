@@ -4,15 +4,15 @@
   <div id="app">
     <v-container id="nav" style="max-width: unset;">
       <div>
-        <v-img width="200px" id="logo" :src="require('./assets/logo.svg')"></v-img>
+        <v-img width="240px" id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
-      <div class="hidden-sm-and-down" >
+      <div class="hidden-sm-and-down links" >
         <router-link id="link" to="/">Home</router-link>
         <router-link id="link" to="/who">Gallery</router-link>
         <router-link id="link" to="/what">Contact</router-link>
+        <ButtonBlueSmall class="hidden-sm-and-down" style="margin-left: 32px;" btnText="For Members" route="/"/>
         <!-- <router-link id="link" to="/" style=" padding: 8px;background-color:#ddd;">For Members</router-link> -->
       </div>
-      <ButtonBlueSmall class="hidden-sm-and-down" btnText="For Members" route="/"/>
       <ButtonBlueSmall class="hidden-md-and-up" btnText="icon" route="/"/>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
@@ -73,11 +73,21 @@ export default {
   padding: 0 7vw 0 7vw;
   background-color: #eee;
 
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   a {
-    font-weight: 400;
-    color: #2c3e50;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 0;
     text-decoration: none;
-    padding: 0 8px 0 8px;
+    color: #303960;
+    padding: 0 16px 0 16px;
 
     &.router-link-exact-active {
       color: #788DE5;

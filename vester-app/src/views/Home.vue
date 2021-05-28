@@ -4,8 +4,8 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
       <v-col class="asd" >
-        <Title ttlText="Welkommen"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <Title color="#303960" ttlText="Welkommen"/>
+        <Paragraph color="#303960" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col>
@@ -25,8 +25,8 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row sm="12">
       <v-col sm="12" id="about">
-        <Title ttlText="About"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <Title color="#F6F6F6" ttlText="About"/>
+        <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col id="about">
@@ -61,9 +61,9 @@
         <div>img</div>
       </v-col>
       <v-col id="about">
-        <Title ttlText="About"/>
-        <Paragraph prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
-        <SquareButton btnText="Bliv Spejder" route="/about"/>
+        <Title color="#F6F6F6" ttlText="About"/>
+        <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
     </v-row>
   </v-container>

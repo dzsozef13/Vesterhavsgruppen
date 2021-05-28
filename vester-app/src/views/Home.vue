@@ -9,7 +9,9 @@
         <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col>
-        <div>img</div>
+        <div class="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -119,10 +121,15 @@ export default {
   height: max-content;
 }
 
+.main-img {
+  max-width: 300px;
+  display: flex;
+  align-content: flex-end;
+}
+
 #mainrow{
   display: flex;
   align-items: center;
-
 }
 
 #about{

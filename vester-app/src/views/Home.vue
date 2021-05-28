@@ -1,5 +1,5 @@
 <template>
-<v-app id="home" >
+<div id="home" >
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
@@ -72,7 +72,7 @@
     </v-row>
   </v-container>
 
-</v-app>
+</div>
 </template>
 
 <script>

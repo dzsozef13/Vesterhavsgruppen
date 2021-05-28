@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <v-app>
     <v-container class="hidden-sm-and-down" id="nav" style="max-width: unset;">
       <div>
         <v-img id="logo" :src="require('./assets/logo.svg')"></v-img>
@@ -37,7 +37,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
+  </v-app>
 </template>
 
 <style lang="scss">

@@ -15,11 +15,32 @@
       </div> -->
     </v-container>
     <router-view/>
+    <v-container style="max-width: unset; margin:0;" id="footer">
+      <v-row id="inner-footer">
+        <v-col lg="5" class="column-footer">
+              <h1>Follow us!</h1>
+              <div id="fb">
+              <v-icon style="font-size: 3em; color: Tomato;">fab fa-facebook</v-icon>
+              <p id="pad">FACEBOOK</p>
+              </div>
+
+            
+        </v-col>
+        <v-col lg="7" class="column-footer">
+          <div id="sponsor">
+            <v-img style="height:10vh; width:12vw;" :src="require('../src/assets/ok-logo.jpg')"></v-img>
+            <h1 id="pad">Our sponsors</h1>
+          </div>
+          <p>Hver gang nogen bestiller et OK-kort gennem os og hver gang man tanker benzin eller diesel på et kort, der er tilknyttet vores aftale.
+            Hvis du er interesseret i at støtte os på denne måde, kan du skrive til inge.thisgaard@mail.dk eller tale med en leder til vores spejdermøder.</p>
+
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <style lang="scss">
-
 //fonts
 
 //sansita
@@ -37,6 +58,50 @@
   // text-align: center;
   // color: #2c3e50;
 // }
+#footer{
+    background-color: #eee;
+    height: 47vh;
+    color:#303960;
+    padding: 0 8vw 0 8vw;
+  }
+  h1{
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+  .column-footer{
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+  }
+  #fb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5vh 0 0 0;
+    margin: 0;
+  }
+  #sponsor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vw;
+  }
+  #pad{
+    padding-left: 2vw;
+  }
+
+
+
 
 #nav {
   display: flex;
@@ -67,6 +132,7 @@
       color: #788DE5;
     }
   }
+
 @media screen and (max-width:600px) {
   #logo{
     width: 80%;

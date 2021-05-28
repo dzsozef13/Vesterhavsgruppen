@@ -17,7 +17,7 @@
     <router-view/>
     <v-container style="max-width: unset; margin:0;" id="footer">
       <v-row id="inner-footer">
-        <v-col lg="5" class="column-footer">
+        <v-col lg="5" class="column-footer" id="first-column">
               <h1>Follow us!</h1>
               <div id="fb">
               <v-icon style="font-size: 3em; color: Tomato;">fab fa-facebook</v-icon>
@@ -28,7 +28,7 @@
         </v-col>
         <v-col lg="7" class="column-footer">
           <div id="sponsor">
-            <v-img style="height:10vh; width:12vw;" :src="require('../src/assets/ok-logo.jpg')"></v-img>
+            <v-img id="sponsor-logo" :src="require('../src/assets/ok-logo.jpg')"></v-img>
             <h1 id="pad">Our sponsors</h1>
           </div>
           <p>Hver gang nogen bestiller et OK-kort gennem os og hver gang man tanker benzin eller diesel på et kort, der er tilknyttet vores aftale.
@@ -99,6 +99,10 @@
   #pad{
     padding-left: 2vw;
   }
+  #sponsor-logo{
+    width: 20vh;
+    height: 8vh;
+  }
 
 
 
@@ -117,7 +121,7 @@
   width: 100%;
   padding: 0 7vw 0 7vw;
   background-color: #eee;
-
+}
   #link{
     margin-left: 4vw;
   }
@@ -141,6 +145,40 @@
   #link{
     display: none;
   }
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .column-footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  #inner-footer{
+    display: flex;
+    flex-direction: column;
+        margin: 0;
+    padding-bottom: 0;
+  }
+  #footer{
+    display: flex;
+    justify-content: center;
+
+  }
+    #fb{
+    padding: 3vh 0 0 0;
+  }
+  #sponsor-logo{
+    width: 10vh;
+    height: 4vh;
+  }
+
 }
-}
+
 </style>

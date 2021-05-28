@@ -13,13 +13,13 @@
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
+        <v-container fluid class="section-1" id="carousels" style="max-width: unset; margin:0;" >
             <v-row >
             <v-col lg="12" id="car-col" >
                 <template>
                     <v-carousel
                         cycle
-                        height="600"
+                        height="800"
                         hide-delimiter-background
                         show-arrows-on-hover
                         id="car"
@@ -39,21 +39,157 @@
                     >Next slide</v-btn>
                     </template>
                     <v-carousel-item
-                    v-for="(slide, i) in slides"
+                    v-for="(korpslejr, i) in korpslejrs"
                     :key="i"
+                    :src="korpslejr.src"
+                    height="100%"
                     >
                     <v-sheet
-                        :color="colors[i]"
-                        height="100%"
+                        :src="korpslejr.src"
                     >
                         <v-row
                         class="fill-height"
                         align="center"
                         justify="center"
                         >
-                        <div class="display-3">
-                            {{ slide }} Slide
-                        </div>
+                        </v-row>
+                    </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
+                </template>
+            </v-col>
+            </v-row>
+
+             <v-row >
+            <v-col lg="12" id="car-col" >
+                <template>
+                    <v-carousel
+                        cycle
+                        height="800"
+                        hide-delimiter-background
+                        show-arrows-on-hover
+                        id="car"
+                    >
+                    <template v-slot:prev="{ on, attrs }">
+                    <v-btn
+                        color="success"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Previous slide</v-btn>
+                    </template>
+                    <template v-slot:next="{ on, attrs }">
+                    <v-btn
+                        color="info"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Next slide</v-btn>
+                    </template>
+                    <v-carousel-item
+                    v-for="(gruppetur, i) in gruppeturs"
+                    :key="i"
+                    :src="gruppetur.src"
+                    height="100%"
+                    >
+                    <v-sheet
+                        :src="gruppetur.src"
+                    >
+                        <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                        >
+                        </v-row>
+                    </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
+                </template>
+            </v-col>
+            </v-row>
+
+            <v-row >
+            <v-col lg="12" id="car-col" >
+                <template>
+                    <v-carousel
+                        cycle
+                        height="800"
+                        hide-delimiter-background
+                        show-arrows-on-hover
+                        id="car"
+                    >
+                    <template v-slot:prev="{ on, attrs }">
+                    <v-btn
+                        color="success"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Previous slide</v-btn>
+                    </template>
+                    <template v-slot:next="{ on, attrs }">
+                    <v-btn
+                        color="info"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Next slide</v-btn>
+                    </template>
+                    <v-carousel-item
+                    v-for="(junior, i) in juniors"
+                    :key="i"
+                    :src="junior.src"
+                    height="100%"
+                    >
+                    <v-sheet
+                        :src="junior.src"
+                    >
+                        <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                        >
+                        </v-row>
+                    </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
+                </template>
+            </v-col>
+            </v-row>
+
+            <v-row >
+            <v-col lg="12" id="car-col" >
+                <template>
+                    <v-carousel
+                        cycle
+                        height="800"
+                        hide-delimiter-background
+                        show-arrows-on-hover
+                        id="car"
+                    >
+                    <template v-slot:prev="{ on, attrs }">
+                    <v-btn
+                        color="success"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Previous slide</v-btn>
+                    </template>
+                    <template v-slot:next="{ on, attrs }">
+                    <v-btn
+                        color="info"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Next slide</v-btn>
+                    </template>
+                    <v-carousel-item
+                    v-for="(trop, i) in trops"
+                    :key="i"
+                    :src="trop.src"
+                    height="100%"
+                    >
+                    <v-sheet
+                        :src="trop.src"
+                    >
+                        <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                        >
                         </v-row>
                     </v-sheet>
                     </v-carousel-item>
@@ -78,19 +214,297 @@ export default {
   },
   data () {
     return {
-            colors: [
-            'indigo',
-            'warning',
-            'pink darken-2',
-            'red lighten-1',
-            'deep-purple accent-4',
+            korpslejrs: [
+                {
+                    src: require('../assets/2009/DSC03998.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04031.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04037.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04038.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04062.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04140.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04197.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04264.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04384.jpg')
+                },
+                {
+                    src: require('../assets/2009/DSC04482.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0468.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0536.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0576.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0609.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0631.jpg')
+                },
+                {
+                    src: require('../assets/2009/IMG_0669.jpg')
+                },
+                {
+                    src: require('../assets/2009/P1010083.jpg')
+                },
+                {
+                    src: require('../assets/2009/P1030625.jpg')
+                },
+                {
+                    src: require('../assets/2009/P1030633.jpg')
+                },
+
             ],
-            slides: [
-            'First',
-            'Second',
-            'Third',
-            'Fourth',
-            'Fifth',
+            gruppeturs: [
+                {
+                    src: require('../assets/2010/IMAG0013.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0015.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0018.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0020.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0021.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0022.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0025.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0027.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0030.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0034.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0036.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0040.jpg')
+                },
+                {
+                    src: require('../assets/2010/IMAG0044.jpg')
+                },
+
+            ],
+            juniors: [
+
+                {
+                    src: require('../assets/2011/DSCF3490.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3504.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3535.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3537.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3555.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3556.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3562.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3565.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3593.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3602.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3605.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3618.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3653.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3691.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3702.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3721.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3728.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3733.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3759.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3776.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3804.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3923.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3950.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3956.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3963.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3968.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3971.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3977.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF3993.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4012.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4019.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4027.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4028.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4043.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4044.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4054.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4079.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4087.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4098.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4108.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4121.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4124.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4156.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4167.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4170.jpg')
+                },
+                {
+                    src: require('../assets/2011/DSCF4173.jpg')
+                },
+                {
+                    src: require('../assets/2011/IMGP1025.jpg')
+                },
+
+            ],
+             trops: [
+                {
+                    src: require('../assets/2011T/DSC03932.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC03937.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC03944.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC03946.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04299.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04301.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04318.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04328-2.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04329.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04331.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04333.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04335.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04338-2.jpg')
+                },
+                {
+                    src: require('../assets/2011T/DSC04340.jpg')
+                },
+
             ],
         }
     },
@@ -112,6 +526,10 @@ export default {
   color: rgb(35, 33, 56);
   
 }
+#carousels{
+    display: flex;
+    flex-direction: column;
+}
 
 .asd {
   display: flex;
@@ -128,6 +546,7 @@ export default {
 }
 #car-col{
     padding:0;
+    margin-bottom: 10vh;
 }
 
 </style>

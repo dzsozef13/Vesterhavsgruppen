@@ -24,7 +24,16 @@
           <v-img :src="require('../assets/bakkevej.jpg')"></v-img>
         </div>
         <div id="two">
-          mow
+          <h1>
+            Vesterhavsgruppens hytter
+          </h1>
+          <p>
+            Gruppen har en mødehytte på Bakkevej 14, på en grund vi deler med Sct. Georgsgilderne, De Grønne Pigespejdere og FDF.
+            I hytten er der et stort fælles møderum, 4 patruljelokaler, et lederrum og et moderne køkken.
+            <br>
+            Der er god plads uden om hytten, så vi kan arbejde med pionerarbejde og båltænding.
+            I hytten er der depot med udstyr så hele gruppen kan tage på teltlejr på en gang.
+          </p>
         </div>
         
       </v-col>
@@ -129,5 +138,19 @@ export default {
 
   width: 100%;
   height: 60vh;
-}
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center ;
+  padding: 0 3vw 0 3vw;
+  
+  }
+  h1{
+    font-size: 2vw;
+  }
+  p{
+    font-size: 1.3vw;
+    margin-top: 3vh;
+  }
 </style>

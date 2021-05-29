@@ -63,7 +63,7 @@ export default {
       links: {
         route01: "/",
         route02: "/gallery",
-        route03: "/contacts",
+        route03: "/contact",
       },
       viewChanger: {
         text: "For Members",

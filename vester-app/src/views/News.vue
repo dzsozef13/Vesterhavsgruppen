@@ -108,7 +108,7 @@ export default {
   align-items: left;
   justify-content: center;
   min-height: 70vh;
-  padding: 24px 16vw 24px 16vw;
+  padding: 10vh 5vw 5vh 10vw;
   margin: 0;
 }
 

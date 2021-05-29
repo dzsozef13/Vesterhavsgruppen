@@ -22,6 +22,7 @@ export default {
             font-family: 'Merriweather', serif;
             font-size: 3vw;
             font-weight: bold;
+            letter-spacing: 0.2vw;
         }
     }
 

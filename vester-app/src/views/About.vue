@@ -13,17 +13,28 @@
           </v-col>
         </v-row>
       </v-container>
-      <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
+      <v-container fluid class="section-3" style="max-width: unset; margin:0;" id="nogle">
         <v-row lg="12" sm="12">
           <v-col lg="12" sm="12" id="about2">
-            
-            <h1>Nogle af vores mål er</h1>
-            <p class="goals">Vi vil være fremadrettede og beslutsomme</p>
-            <p class="goals">Vi tør udvikle børn og unge til at tage del i og ansvar for sig selv og samfundet</p>
-            <p class="goals">Vi tør at vise overskud og risikovilje</p>
+            <h1 id="goals-title">Nogle af vores mål er</h1>
+            <p class="goals">Vi vil være <span id="blue"> fremadrettede </span> og beslutsomme</p>
+            <p class="goals">Vi tør <span id="blue"> udvikle </span> børn og unge til at tage del i og ansvar for sig selv og samfundet</p>
+            <p class="goals">Vi tør at vise <span id="blue"> overskud </span> og risikovilje</p>
           </v-col>
         </v-row>
       </v-container>
+
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="third">
+          <v-row >
+            <v-col>
+              <div id="where">img</div>
+            </v-col>
+            <v-col id="about3">
+              <Title color="#F6F6F6" ttlText="Vi gør"/>
+              <p id="white-text">Udvikling, træning og uddannelse, som spejderne kan bruge i deres daglige spejderarbejde. Og senere i deres arbejdsliv.</p>
+            </v-col>
+          </v-row>
+        </v-container>
   </div>
 </template>
 
@@ -81,9 +92,41 @@ export default {
   color: #303960;
   height: 90vh;
 }
+#goals-title{
+  margin-bottom: 4vh;
+  letter-spacing: 0.2vw;
+}
 .goals{
   color: #303960;
   font-size: 1.5vw;
+  margin-top: 2vh;
 }
+#nogle{
+  height: 60vh;
+  color: #303960;
+  background-color: #eee;
+  
+}
+#blue{
+  color: #637CDF;
+}
+#third{
+  background-color:#303960;
+  height: 90vh;
+}
+#about3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+}
+#where{
+  height: 100%;
+  color: white;
+}
+#white-text{
+  color: #eee;
+  font-size: 1.2vw;
+  font-family: 'Lato', sans-serif;
+}
 </style>

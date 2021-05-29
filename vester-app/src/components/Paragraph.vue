@@ -18,7 +18,7 @@ export default {
         max-width: 600px;
         h3 {
             font-family: 'Lato', sans-serif;
-            font-size: 20px;
+            font-size: 1.2vw;
             font-weight: normal;
         }
     }

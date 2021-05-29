@@ -13,7 +13,7 @@
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-1" id="carousels" style="max-width: unset; margin:0;" >
+        <v-container fluid class="section-2" id="carousels" style="max-width: unset; margin:0;" >
             <v-row >
             <v-col lg="12" id="car-col" >
                 <template>
@@ -574,7 +574,7 @@ export default {
   margin: 0;
 }
 
-.section-1 {
+.section-2 {
   @include section();
   background-color: #eee;
   color: rgb(35, 33, 56);

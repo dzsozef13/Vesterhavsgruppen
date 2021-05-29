@@ -51,7 +51,7 @@ export default {
 
         h4 {
             font-family: 'Lato', sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             letter-spacing: 0;
             padding: 0 8px 0 8px;

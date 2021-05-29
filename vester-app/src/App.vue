@@ -6,14 +6,22 @@
       <div>
         <v-img width="240px" id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
-      <div class="hidden-sm-and-down links" >
-        <router-link id="link" to="/">Home</router-link>
-        <router-link id="link" to="/who">Gallery</router-link>
-        <router-link id="link" to="/what">Contact</router-link>
-        <ButtonBlueSmall class="hidden-sm-and-down" style="margin-left: 32px;" btnText="For Members" route="/"/>
+      <div class="hidden-sm-and-down links">
+        <router-link :to= links.route01 >Home</router-link>
+        <router-link :to= links.route02 >Gallery</router-link>
+        <router-link :to= links.route03 >Contacts</router-link>
+
+        <v-btn id="square-button" v-on:click="test()"
+            dark
+            depressed
+            tile
+            >
+                <h4>{{ viewChanger.text }}</h4>
+        </v-btn>
+
+        <!-- <ButtonBlueSmall class="hidden-sm-and-down" style="margin-left: 32px;" btnText="For Members" route="/"/> -->
         <!-- <router-link id="link" to="/" style=" padding: 8px;background-color:#ddd;">For Members</router-link> -->
       </div>
-      <ButtonBlueSmall class="hidden-md-and-up" btnText="icon" route="/"/>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
       </div> -->
@@ -48,12 +56,39 @@
 
 <script>
 
-import ButtonBlueSmall from '@/components/ButtonBlueSmall.vue'
-
 export default {
   name: 'App',
-  components: {
-    ButtonBlueSmall
+  data() {
+    return { 
+      links: {
+        route01: "/",
+        route02: "/gallery",
+        route03: "/contacts",
+      },
+      viewChanger: {
+        text: "For Members",
+        index: 0,
+      }
+    }
+  },
+  methods: {
+    test() {
+      if (this.viewChanger.index == 0) {
+        console.log("yay");
+        this.$router.push("/news");
+        this.links.route01 = "/news";
+        this.viewChanger.text = "For Visitors";
+        this.viewChanger.index = 1;
+      }
+      else {
+        console.log("shehs");
+        this.$router.push("/");
+        this.links.route01 = "/";
+        this.viewChanger.text = "For Members";
+        this.viewChanger.index = 0;
+      }
+      
+    }
   }
 }
 
@@ -150,7 +185,7 @@ export default {
 
   a {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 40px;
     font-weight: bold;
     letter-spacing: 0;
@@ -162,6 +197,38 @@ export default {
       color: #788DE5;
     }
   }
+
+  #square-button {
+        // body
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        width: max-content;
+        height: 40px;
+        margin: 0;
+        // style
+        text-align: center;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        background-color: white;
+        //border
+        border-style: solid;
+        border-width: 4px;
+        border-color: #303960;
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0;
+            padding: 0 8px 0 8px;
+            color: #303960;
+        }
+        box-shadow: 0 4px 0 #637CDF;
+    }
+}
 
 @media screen and (max-width:600px) {
   #logo{
@@ -200,8 +267,6 @@ export default {
     width: 10vh;
     height: 4vh;
   }
-
-}
 }
 
 </style>

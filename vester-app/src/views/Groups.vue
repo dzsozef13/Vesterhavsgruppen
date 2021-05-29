@@ -4,13 +4,14 @@
         <v-row id="mainrow" >
         <v-col class="asd" >
             <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
-            <GroupButton @click="goto('div1')" btnText="Mikro (0. - 1. klasse)" />
+            <GroupButton v-scroll-to="'#meow'" btnText="Mikro (0. - 1. klasse)"/>
+            
         </v-col>
         </v-row>
     </v-container>
 
     <v-container fluid class="groups" >
-        <div class="div" ref="div1">
+        
         <v-row class="groups-inner">
             <v-col lg="6" class="group-column" >
                 <h1>Mikro</h1>
@@ -28,7 +29,7 @@
             <v-col lg="6">
             </v-col>
         </v-row> 
-        </div>
+        <div id="meow"></div>
     </v-container>
     
         <v-container fluid class="groups" id="light">
@@ -142,11 +143,15 @@ export default {
     components: {
     // HelloWorld
         Title,
-        ButtonBlue
+        GroupButton
+
     },
     mounted () {
         window.scrollTo(0, 0)
-    }
+    },
+
+
+
 }
 </script>
 

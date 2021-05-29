@@ -131,6 +131,7 @@ export default {
 .main-img {
   display: flex;
   align-content: flex-end;
+  max-width: 400px;
 }
 
 #mainrow{

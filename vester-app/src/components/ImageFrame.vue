@@ -1,6 +1,6 @@
 <template>
     <v-container id="frame">
-        <div id="img">
+        <div id="img-asd">
             <v-img style="opacity: 0.9;" contain :src="require(`@/assets/${filename}`)"/>
         </div>
         <h1>{{ ttlText }}</h1>
@@ -26,7 +26,7 @@ export default {
         width: auto;
         background-color: white;
 
-        #img {
+        #img-asd {
             display: flex;
             flex-direction: column;
             align-content: center;

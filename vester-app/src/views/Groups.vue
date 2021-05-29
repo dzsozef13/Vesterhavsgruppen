@@ -141,7 +141,9 @@ export default {
     // HelloWorld
         Title,
         ButtonBlue
-
+    },
+    mounted () {
+        window.scrollTo(0, 0)
     }
 
 

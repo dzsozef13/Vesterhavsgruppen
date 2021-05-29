@@ -89,6 +89,9 @@ export default {
     Title,
     Paragraph,
 
+  },
+  mounted () {
+    window.scrollTo(0, 0)
   }
   
 }

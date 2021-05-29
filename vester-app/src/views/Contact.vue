@@ -11,11 +11,22 @@
         </v-col>
       </v-row>
   </v-container>
-    <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
+    <v-container fluid style="max-width: unset; margin:0; padding:0;" id="map">
     <v-row lg="12"  style="margin:0;" >
-      <v-col lg="12"  style="padding:0;">
-        <v-img :src="require('../assets/Thumb.jpg')" id="video">
+      <v-col lg="8"  style="padding:0;">
+        <div id="map">
+        <v-img id="esbjerg" :src="require('../assets/Esbjerg_map.png')" >
         </v-img>
+        </div>
+      </v-col>
+      <v-col lg="4"  style="padding:0;" id="dark-column">
+        <div id="one">
+          <v-img :src="require('../assets/bakkevej.jpg')"></v-img>
+        </div>
+        <div id="two">
+          mow
+        </div>
+        
       </v-col>
     </v-row>
   </v-container>
@@ -97,5 +108,26 @@ export default {
 .workers{
   display: flex;
   flex-direction: row;
+}
+#map{
+  height: 100vh;
+}
+#esbjerg{
+  height: 100%;
+}
+#dark-column{
+  background-color: #303960;
+  display: flex;
+  flex-direction: column;
+}
+#one{
+
+  width: 100%;
+  height: 40vh;
+}
+#two{
+
+  width: 100%;
+  height: 60vh;
 }
 </style>

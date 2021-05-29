@@ -36,7 +36,9 @@
         <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col id="about">
-        <div>img</div>
+        <div class="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -64,7 +66,9 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row >
       <v-col >
-        <div>img</div>
+        <div class="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+        </div>
       </v-col>
       <v-col id="about">
         <Title color="#F6F6F6" ttlText="About"/>

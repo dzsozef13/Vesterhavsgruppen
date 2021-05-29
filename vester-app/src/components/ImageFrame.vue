@@ -31,7 +31,7 @@ export default {
             flex-direction: column;
             align-content: center;
             justify-content: flex-start;
-            padding: 8px;
+            padding: 2px;
             width: 300px;
         }
 

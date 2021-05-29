@@ -196,5 +196,6 @@ export default {
 #text-container{
   display:flex;
   flex-direction: column;
+  padding-bottom: 6vh;
 }
 </style>

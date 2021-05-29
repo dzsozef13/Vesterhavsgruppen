@@ -73,7 +73,7 @@
       <v-col lg="6" id="about">
         <Title color="#F6F6F6" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#F6F6F6" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
-        <ButtonWhite btnText="Afdelinger" route="/about"/>
+        <ButtonWhite btnText="Afdelinger" route="/groups"/>
       </v-col>
     </v-row>
   </v-container>

@@ -5,6 +5,7 @@ import News from '../views/News.vue'
 import About from '../views/About.vue'
 import Gallery from '../views/Gallery.vue'
 import Contact from '../views/Contact.vue'
+import Groups from '../views/Groups.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/groups',
+    name: 'Groups',
+    component: Groups
   }
 ]
 

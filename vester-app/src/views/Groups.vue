@@ -4,14 +4,15 @@
         <v-row id="mainrow" >
         <v-col class="asd" >
             <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
-            <ButtonBlue btnText="Bliv Spejder" route="/about"/>
+            <GroupButton @click="goto('div1')" btnText="Mikro (0. - 1. klasse)" />
         </v-col>
         </v-row>
     </v-container>
 
-    <v-container fluid class="groups">
+    <v-container fluid class="groups" >
+        <div class="div" ref="div1">
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column">
+            <v-col lg="6" class="group-column" >
                 <h1>Mikro</h1>
                 <h2>Tirsdag kl. 16:30 - 18:00</h2>
                 <h5>Mikrospejd er at være sammen, lære, sanse og lege. Vi bygger huler, snitter, laver bål og mange andre ting. Vi har spejderhytten som vores faste tilholdssted, her findes udstyr og de ting spejderne har samlet og som vi alle sammen bruger. I spejderhytten bruger vi den del tid på at synge, lege og fortælle historier.
@@ -27,6 +28,7 @@
             <v-col lg="6">
             </v-col>
         </v-row> 
+        </div>
     </v-container>
     
         <v-container fluid class="groups" id="light">
@@ -133,15 +135,23 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
 
 <script>
 import Title from '@/components/Title.vue'
-import ButtonBlue from '@/components/ButtonBlue.vue'
+import GroupButton from '@/components/GroupButton.vue'
 
 export default {
     name:'groups',
     components: {
     // HelloWorld
         Title,
-        ButtonBlue
+        GroupButton
 
+    },
+    methods: {
+        goto(refName) {
+        var element = this.$refs[refName];
+        var top = element.offsetTop;
+
+        window.scrollTo(0, top);
+        }
     }
 
 

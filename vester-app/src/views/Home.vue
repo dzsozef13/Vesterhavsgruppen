@@ -4,8 +4,8 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
       <v-col class="asd" >
-        <Title color="#303960" ttlText="Welkommen"/>
-        <Paragraph color="#303960" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
+        <Title color="#303960" ttlText="Velkommen"/>
+        <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
         <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col>

@@ -198,12 +198,41 @@
             </v-col>
             </v-row>
         </v-container>
+
+        <v-container fluid class="section-1" id="external" style="max-width: unset; margin:0; padding:0;">
+            <v-row>
+                <v-col lg="12" id="header">
+                    <h1>External websites with pictures from our scouts meetings!</h1>
+                </v-col>
+            </v-row>
+            <v-row style="margin:0; padding:0">
+                <v-col lg="12" id="external-links" style="margin:0; padding:0">
+                    <div class="img" id="first">
+                        <v-img style="width:100%; height:100%; " :src="require('../assets/65768165_459424314846072_275482741418491904_n.jpg')"></v-img>
+                    </div>
+                    <div class="img" >
+                        <v-img style="width:100%; height:100%;"  :src="require('../assets/juniortor.jpg')"></v-img>
+                    </div>
+                    <div class="img" >
+                        <v-img style="width:100%; height:100%;"  :src="require('../assets/m1373670481.jpg')"></v-img>
+                    </div>
+                    <div class="img" >
+                        <v-img style="width:100%; height:100%;"  :src="require('../assets/m1404506314.jpg')"></v-img>
+                    </div>
+                    <div class="img" >
+                        <v-img style="width:100%; height:100%; "  :src="require('../assets/PR-uden-skilte-lille-768x511.jpg')"></v-img>
+                    </div>
+
+                </v-col>
+            </v-row>
+        </v-container>
   </div>
 </template>
 
 <script>
 import Title from '@/components/Title.vue'
 import SquareButton from '@/components/SquareButton.vue'
+
 
 export default {
   name: 'Gallery',
@@ -548,5 +577,30 @@ export default {
     padding:0;
     margin-bottom: 10vh;
 }
+.img{
+    width: 19vw;
+    height: 19vw;
+    margin-left: 1vw;
+}
+#external{
+    display: flex;
+    flex-direction: column;
+    
+}
+#external-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
 
+}
+#first{
+    margin-left: 0;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>

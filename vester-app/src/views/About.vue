@@ -39,16 +39,40 @@
 
         <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="sticker">
             <v-row sm="12">
-              <v-col lg="6" sm="12" id="about1">
-                <Title color="#303960" ttlText="About Us"/>
-              </v-col>
-            </v-row>
+              <v-col lg="12" sm="12" id="about4"  style="padding:0">
+                <Title color="#303960" ttlText="Vi handler og udvikler spejderne via fokusområderne "/>
 
-            <v-row sm="12">
-              <v-col lg="6" sm="12" id="about1">
-                <Title color="#303960" ttlText="About Us"/>
+              </v-col>
+              <v-col lg="12" sm="12" id="about-list"  style="padding:0">
+                <p id="list">
+                  - Spejdere mod mobning. 
+                  <br>- Spejdere for opmærksomhed på natur og miljø
+                  <br>- Spejdere for en sund krop og god mad.
+                  <br>- Spejdere for en øget integration i samfundet.
+                </p>
               </v-col>
             </v-row>
+        </v-container>
+
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="last">
+          <v-row id="text-container">
+            <v-col lg="6" id="about4">
+              <Title color="#eee" ttlText="Kontingent"/>
+              <Paragraph color="#eee" prgText="For tiden udgør indmeldelsesgebyret 200 kr. som bl.a. dækker en T-skirt, et tørklæde og en arbejdsstofbog. Kontinget er på 850 kr. årligt, som opkræves i 2 halvårlige rater. "/>
+            </v-col>
+            <v-col lg="6">
+              <Title color="#eee" ttlText="Uniformsvejledning"/>
+              <Paragraph color="#eee" prgText="Grundlæggende består uniformen af selve uniformen, som findes i anorak- eller skjortefacon samt tørklæde i gruppens farver. Når det er varmt kan man anvende en mørkeblå T-shirt i stedet for spejderuniformen."/>
+              <p style="color:#eee;">Mikrospejdere behøver ikke at anskaffe en spejderuniform.
+              Øvrige uniformsgenstande og udstyr kan købes i Spejdersport. På tegningen kan ses, hvor de forskellige mærker skal sidde på uniformen.</p>
+            </v-col>
+          </v-row>
+          <v-row>
+            <h1 style="color:white;">img</h1>
+          </v-row>
+          <v-row >
+
+          </v-row>
         </v-container>
   </div>
 </template>
@@ -135,6 +159,7 @@ export default {
   justify-content: center;
 
 }
+
 #where{
   height: 100%;
   color: white;
@@ -146,6 +171,30 @@ export default {
 }
 #sticker{
   display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+#list{
+  font-size: 24px;
+  line-height: 3;
+}
+#about4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#about-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#last{
+  background-color: #303960;
+  height: 120vh;
+}
+#text-container{
+  display:flex;
   flex-direction: column;
 }
 </style>

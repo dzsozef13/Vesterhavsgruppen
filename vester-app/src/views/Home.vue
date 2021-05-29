@@ -30,12 +30,12 @@
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row sm="12">
-      <v-col sm="12" id="about">
+      <v-col lg="6" sm="12" id="about">
         <Title color="#F6F6F6" ttlText="About"/>
         <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
-      <v-col id="about">
+      <v-col lg="6" id="about">
         <div class="main-img">
           <v-img :src="require('@/assets/il_home.svg')"></v-img>
         </div>
@@ -65,12 +65,12 @@
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row >
-      <v-col >
+      <v-col lg="6">
         <div class="main-img">
           <v-img :src="require('@/assets/il_home.svg')"></v-img>
         </div>
       </v-col>
-      <v-col id="about">
+      <v-col lg="6" id="about">
         <Title color="#F6F6F6" ttlText="About"/>
         <Paragraph color="#F6F6F6" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <ButtonWhite btnText="Bliv Spejder" route="/about"/>

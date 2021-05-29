@@ -204,7 +204,7 @@ export default {
         flex-direction: column;
         justify-content: center; 
         align-items: center;
-        width: max-content;
+        width: 150px;
         height: 40px;
         margin: 0;
         margin-left:3vw;

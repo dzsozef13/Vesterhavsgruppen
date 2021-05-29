@@ -206,22 +206,44 @@
                 </v-col>
             </v-row>
             <v-row style="margin:0; padding:0">
-                <v-col lg="12" id="external-links" style="margin:0; padding:0">
-                    <div class="img" id="first">
-                        <v-img style="width:100%; height:100%; " :src="require('../assets/65768165_459424314846072_275482741418491904_n.jpg')"></v-img>
+                <v-col lg="12" id="external-links" style="margin:0; padding:0" >
+                    <div class="hover">
+                    <a href="http://vesterhavsgruppen.neffets.dk/" target="_blank" > 
+                    <div class="img1" id="first"  >
+                        <figure>
+                        <v-img style="width:100%; height:100%;" class="hov" :src="require('../assets/m1373670481.jpg')"><p id="tag">Sommerlejr for Junior og trop til Kulsø 2013</p></v-img>
+                        </figure>
                     </div>
-                    <div class="img" >
-                        <v-img style="width:100%; height:100%;"  :src="require('../assets/juniortor.jpg')"></v-img>
+                    </a>
+                    <a href="http://kulso2014.neffets.dk/" target="_blank"> 
+                    <div class="img1" id="first" >
+                        <figure>
+                        <v-img style="width:100%; height:100%;" class="hov"  :src="require('../assets/m1404506314.jpg')"><p id="tag">Sommerlejr for minier på Kulsø 2014</p></v-img>
+                        </figure>
                     </div>
-                    <div class="img" >
-                        <v-img style="width:100%; height:100%;"  :src="require('../assets/m1373670481.jpg')"></v-img>
+                    </a>
+                    <a href="http://houensodde.neffets.dk/" target="_blank"> 
+                    <div class="img1" id="first">
+                        <figure>
+                        <v-img style="width:100%; height:100%;" class="hov"  :src="require('../assets/juniortor.jpg')"><p id="tag">Juniorsommerlejr på Houens Odde 2015</p></v-img>
+                        </figure>
                     </div>
-                    <div class="img" >
-                        <v-img style="width:100%; height:100%;"  :src="require('../assets/m1404506314.jpg')"></v-img>
+                    </a>
+                    <a href="http://tydal.neffets.dk/" target="_blank"> 
+                    <div class="img1" id="first">
+                        <figure>
+                        <v-img style="width:100%; height:100%;" class="hov"  :src="require('../assets/PR-uden-skilte-lille-768x511.jpg')"><p id="tag">Gruppesommerlejr til Tydal 2016</p></v-img>
+                        </figure>
                     </div>
-                    <div class="img" >
-                        <v-img style="width:100%; height:100%; "  :src="require('../assets/PR-uden-skilte-lille-768x511.jpg')"></v-img>
+                    </a>
+                    <a href="https://www.facebook.com/Vesterhavsgruppens-juniorer-p%C3%A5-sommerlejr-2019-455957885192715/?modal=admin_todo_tour" target="_blank"> 
+                    <div class="img1" id="first">
+                        <figure>
+                        <v-img style="width:100%; height:100%; " class="hov"  :src="require('../assets/65768165_459424314846072_275482741418491904_n.jpg')"><p id="tag">Juniorsommerlejr på Forlev 2019</p></v-img>
+                        </figure>
                     </div>
+                    </a></div>
+
 
                 </v-col>
             </v-row>
@@ -243,6 +265,9 @@ export default {
   },
   data () {
     return {
+
+
+        
             korpslejrs: [
                 {
                     src: require('../assets/2009/DSC03998.jpg')
@@ -577,7 +602,7 @@ export default {
     padding:0;
     margin-bottom: 10vh;
 }
-.img{
+.img1{
     width: 19vw;
     height: 19vw;
     margin-left: 1vw;
@@ -603,4 +628,49 @@ export default {
     justify-content: center;
     align-items: center;
 }
+#tag{
+    z-index: 1111;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 500;
+    margin: 3vh;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+
+
+}
+a{
+    text-decoration: none;
+
+}
+figure{
+    width: 19vw;
+    height: 19vw;
+
+}
+.hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.hover figure {
+	background: #49BFA3;
+
+}
+.hover figure .hov {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover .hov {
+	opacity: .5;
+    -webkit-filter: contrast(150%);
+	filter: contrast(150%);
+}
+
 </style>

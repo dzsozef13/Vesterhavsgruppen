@@ -4,7 +4,7 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
       <v-col class="asd" >
-        <Title color="#303960" ttlText="Welkommen"/>
+        <Title color="#303960" ttlText="Aktuelle"/>
         <Paragraph color="#303960" prgText="My challenge was to help Rubea, a local enamelist to create a channel to sell her products and to boost her SoMe reach."/>
         <ButtonBlue btnText="Bliv Spejder" route="/about"/>
       </v-col>
@@ -36,7 +36,9 @@
         <ButtonWhite btnText="Bliv Spejder" route="/about"/>
       </v-col>
       <v-col id="about">
-        <div>img</div>
+        <div class="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -64,7 +66,9 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row >
       <v-col >
-        <div>img</div>
+        <div class="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+        </div>
       </v-col>
       <v-col id="about">
         <Title color="#F6F6F6" ttlText="About"/>

@@ -13,6 +13,7 @@
           </v-col>
         </v-row>
       </v-container>
+
       <v-container fluid class="section-3" style="max-width: unset; margin:0;" id="nogle">
         <v-row lg="12" sm="12">
           <v-col lg="12" sm="12" id="about2">
@@ -31,9 +32,23 @@
             </v-col>
             <v-col id="about3">
               <Title color="#F6F6F6" ttlText="Vi gør"/>
-              <p id="white-text">Udvikling, træning og uddannelse, som spejderne kan bruge i deres daglige spejderarbejde. Og senere i deres arbejdsliv.</p>
+              <p id="white-text">Udvikling, træning og uddannelse, som spejderne kan bruge i <br> deres daglige spejderarbejde. Og senere i deres arbejdsliv.</p>
             </v-col>
           </v-row>
+        </v-container>
+
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="sticker">
+            <v-row sm="12">
+              <v-col lg="6" sm="12" id="about1">
+                <Title color="#303960" ttlText="About Us"/>
+              </v-col>
+            </v-row>
+
+            <v-row sm="12">
+              <v-col lg="6" sm="12" id="about1">
+                <Title color="#303960" ttlText="About Us"/>
+              </v-col>
+            </v-row>
         </v-container>
   </div>
 </template>
@@ -128,5 +143,9 @@ export default {
   color: #eee;
   font-size: 1.2vw;
   font-family: 'Lato', sans-serif;
+}
+#sticker{
+  display: flex;
+  flex-direction: column;
 }
 </style>

@@ -6,12 +6,18 @@
           <Title color="#303960" ttlText="Contact"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>
-      </v-row>
-      <v-row id="mainrow" >
         <v-col class="workers" lg="12">
           <Leaders v-for="teacher in teachers" :teacher="teacher" :key="teacher.mail"/>
         </v-col>
       </v-row>
+  </v-container>
+    <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
+    <v-row lg="12"  style="margin:0;" >
+      <v-col lg="12"  style="padding:0;">
+        <v-img :src="require('../assets/Thumb.jpg')" id="video">
+        </v-img>
+      </v-col>
+    </v-row>
   </v-container>
   </div>
 </template>
@@ -66,7 +72,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   min-height: 70vh;
-  padding: 5vh 2vw 2vh 2vw;
+  padding: 10vh 5vw 5vh 10vw;
   margin: 0;
 }
 
@@ -80,12 +86,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  height: max-content;
 }
 
 #mainrow{
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
+
 }
 .workers{
   display: flex;

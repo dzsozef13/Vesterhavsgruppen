@@ -4,7 +4,7 @@
         <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
             <v-row id="mainrow" >
             <v-col class="asd" >
-                <Title ttlText="Gallery"/>
+                <Title color="#303960" ttlText="Gallery"/>
                 <SquareButton btnText="Bliv Spejder" route="/about"/>
             </v-col>
             <v-col>
@@ -595,7 +595,7 @@ export default {
 #mainrow{
   display: flex;
   align-items: center;
-  padding: 24px 16vw 24px 16vw;
+  padding: 10vh 5vw 5vh 10vw;
 
 }
 #car-col{

@@ -191,7 +191,7 @@ export default {
     letter-spacing: 0;
     text-decoration: none;
     color: #303960;
-    padding: 0 16px 0 16px;
+    padding: 0 3vw 0 3vw;
 
     &.router-link-exact-active {
       color: #788DE5;
@@ -207,6 +207,7 @@ export default {
         width: max-content;
         height: 40px;
         margin: 0;
+        margin-left:3vw;
         // style
         text-align: center;
         text-transform: none;

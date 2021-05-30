@@ -1,24 +1,24 @@
 <template>
 <div id="home" >
 
-  <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
-    <v-row id="mainrow" >
-      <v-col class="asd" >
+  <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
+    <v-row>
+      <v-col lg="8" sm="12">
         <Title color="#303960" ttlText="Velkommen"/>
         <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
         <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
       </v-col>
-      <v-col>
-        <div class="main-img" id="main">
-          <v-img  :src="require('@/assets/il_home.svg')"></v-img>
+      <v-col lg="4" sm="12">
+        <div id="main-img">
+          <v-img :src="require('@/assets/il_home.svg')"></v-img>
         </div>
       </v-col>
     </v-row>
   </v-container>
 
   <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
-    <v-row lg="12"  style="margin:0;" >
-      <v-col lg="12"  style="padding:0;">
+    <v-row>
+      <v-col lg="12" style="padding:0;">
         <v-img :src="require('../assets/Thumb.jpg')" id="video">
         <div id="gradient-container">
           <div id="gradient"></div>
@@ -28,33 +28,33 @@
     </v-row>
   </v-container>
 
-  <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
-    <v-row sm="12">
-      <v-col lg="6" sm="12" id="about">
+  <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
+    <v-row>
+      <v-col lg="8" sm="12">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Om Gruppen" route="/about"/>
       </v-col>
-      <v-col lg="6" id="about">
-        <div style="margin-left:110px" class="main-img" id="frame">
-          <ImageFrame ttlText='"Community' filename="thumbnail-3.jpeg"/>
+      <v-col lg="4" sm="12">
+        <div>
+          <ImageFrame ttlText='"Community' filename="thumbnail-3.png"/>
         </div>
       </v-col>
     </v-row>
   </v-container>
 
-  <v-container fluid style="max-width: unset; margin:0; padding:0;" id="badges">
-    <v-row lg="12" style="margin:0;" id="badges">
+  <v-container fluid style="max-width: unset; margin:0;" id="badges">
+    <v-row>
 
-          <v-col lg="4" sm="12" align="center"> 
+          <v-col lg="4" md="6" sm="12" align="center"> 
             <v-img class="badge-svg" :src="require('../assets/badge-fire.svg')"></v-img>
             <p class="badge-text">Adventure</p>
           </v-col>
-          <v-col lg="4" align="center"> 
+          <v-col lg="4" md="6" sm="12" align="center"> 
             <v-img class="badge-svg" :src="require('../assets/badge-forest.svg')"></v-img> 
             <p class="badge-text">Nature</p>
             </v-col>
-          <v-col lg="4" align="center"> 
+          <v-col lg="4" md="12" sm="12" align="center"> 
             <v-img class="badge-svg" :src="require('../assets/badge-hands.svg')" >
             </v-img>
             <p class="badge-text">Friendship</p>
@@ -63,17 +63,17 @@
     </v-row>
   </v-container>
 
-  <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
+  <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
     <v-row >
-      <v-col lg="6" id="about">
-        <div style="margin-right:110px" class="main-img">
-          <ImageFrame ttlText='"Experience' filename="mikro.jpg"/>
-        </div>
-      </v-col>
-      <v-col lg="6" id="about">
+      <v-col lg="8" sm="12" align="left">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Afdelinger" route="/groups"/>
+      </v-col>
+      <v-col lg="4" sm="12">
+        <div>
+          <ImageFrame ttlText='"Experience' filename="mikro.jpg"/>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -111,92 +111,84 @@ export default {
   align-items: left;
   justify-content: center;
   min-height: 70vh;
-  padding: 10vh 5vw 5vh 10vw;
+  min-width: unset;
   margin: 0;
 }
 
 .section-1 {
   @include section();
-  background-color: #eee;
-  color: rgb(35, 33, 56);
+  padding: 100px 10vw 0 10vw
 }
 
-.asd {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  height: max-content;
+.section-2 {
+  @include section();
+  padding: 200px 10vw 200px 10vw;
 }
 
-.main-img {
-  display: flex;
-  align-content: flex-end;
-  max-width: 400px;
-}
-
-#mainrow{
-  display: flex;
-  align-items: center;
-}
-
-#about{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-}
-#dark{
+.dark {
   background-color: #303960 ;
-  color: #eee;
-  height: 100vh;
 }
-#video{
+
+.light {
+  background-color: #eee ;
+}
+
+#main-img {
+  max-width: 300px;
+}
+
+#video {
   min-height: 100vh;
 }
+
 #badges {
   min-height: 80vh;
   display: flex;
   align-items: center;
+  padding: 200px 10vw 200px 10vw;
 }
-.badge-svg{
-  width: 25vw;
+
+.badge-svg {
+  width: auto;
+  max-width: 300px;
 }
-.badge-text{
+
+.badge-text {
   font-family: 'Sansita Swashed', cursive;
-  font-size: 2.5vw;
+  font-size: 40px;
   font-weight: bold;
   color: #303960;
-  letter-spacing: 2px;
-  margin-top: 3vh;
+  letter-spacing: 0;
+  margin-top: 0px;
 }
-#gradient-container{
+
+#gradient-container {
   display: flex;
   align-items:flex-end;
   height: 121vh;
   width: 100vw;
 }
-#gradient{
+
+#gradient {
   height: 80vh;
   width: 100vw;
   z-index: 111;
   background: rgb(48,57,96);
   background: linear-gradient(0deg, rgba(48,57,96,1) 0%, rgba(48,57,96,0) 100%);
 }
+
 @media screen and (max-width:600px) {
-  #badges{
-    flex-direction: column;
-    padding: 8vh 0 5vh 0;
+
+  .section-1, .section-2 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  .badge-svg{
-  width: 60vw;
-}
+
   #main{
     display: none;
   }
   #dark{
-  height: max-content;
-
-}
-
+    height: max-content;
+  }
 }
 </style>

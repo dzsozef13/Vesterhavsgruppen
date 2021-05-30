@@ -22,6 +22,13 @@
         <!-- <ButtonBlueSmall class="hidden-sm-and-down" style="margin-left: 32px;" btnText="For Members" route="/"/> -->
         <!-- <router-link id="link" to="/" style=" padding: 8px;background-color:#ddd;">For Members</router-link> -->
       </div>
+      <v-btn id="square-button-small" v-on:click="test()" class="hidden-md-and-up"
+            dark
+            depressed
+            tile
+            >
+                <h4>icon</h4>
+        </v-btn>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
       </div> -->
@@ -106,13 +113,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
-// #app {
+#app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   // text-align: center;
-  // color: #2c3e50;
-// }
+  overflow: hidden;
+}
 #footer{
     background-color: #eee;
     height: 47vh;
@@ -205,6 +212,37 @@ export default {
         justify-content: center; 
         align-items: center;
         width: 150px;
+        height: 40px;
+        margin: 0;
+        margin-left:3vw;
+        // style
+        text-align: center;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        background-color: white;
+        //border
+        border-style: solid;
+        border-width: 4px;
+        border-color: #303960;
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0;
+            padding: 0 8px 0 8px;
+            color: #303960;
+        }
+        box-shadow: 0 4px 0 #637CDF;
+    }
+    #square-button-small {
+        // body
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        width: 20px;
         height: 40px;
         margin: 0;
         margin-left:3vw;

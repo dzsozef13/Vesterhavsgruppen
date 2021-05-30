@@ -15,6 +15,7 @@ export default {
     #title {
         text-align: left;
         margin: 0 0 24px 0;
+        max-width: 600px;
         padding: 0;
         h1 {
             // font-family: 'Sansita Swashed', cursive;
@@ -22,7 +23,14 @@ export default {
             font-family: 'Merriweather', serif;
             font-size: 40px;
             font-weight: bold;
-            letter-spacing: 0.2vw;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #title {
+            h1 {
+                font-size: 32px;
+            }
         }
     }
 

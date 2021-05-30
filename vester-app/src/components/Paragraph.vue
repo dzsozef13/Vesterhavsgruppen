@@ -22,6 +22,13 @@ export default {
             font-weight: normal;
         }
     }
+    @media screen and (max-width:600px) {
+        #paragraph {
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
 
 </style>
 

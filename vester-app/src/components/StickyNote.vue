@@ -5,8 +5,6 @@
         </div>
         <h1>{{ ttlText }}</h1>
         <v-img  id="tape" contain :src="require(`@/assets/tape.svg`)"/>
-        <v-img  id="leaf01" contain :src="require(`@/assets/leaf01.svg`)"/>
-        <v-img  id="leaf02" contain :src="require(`@/assets/leaf02.svg`)"/>
     </v-container>
 </template>
 
@@ -32,7 +30,7 @@ export default {
             align-content: center;
             justify-content: flex-start;
             padding: 2px;
-            max-width: 350px;
+            width: 350px;
         }
 
         h1 {
@@ -64,55 +62,5 @@ export default {
         }
 
     }
-
-@media screen and (max-width:600px) {
-
-    #frame {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: flex-start;
-        height: auto;
-        width: min-content;
-        background-color: white;
-
-        #img-asd {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: flex-start;
-            padding: 2px;
-            max-width: 250px;
-        }
-
-        h1 {
-            font-family: 'Sansita Swashed', cursive;
-            font-size: 32px;
-            font-weight: bold;
-            color: #637CDF;
-        }
-
-        #tape {
-            position: absolute;
-            z-index: 999;
-            margin: -25px 0 0 100px;
-            width: 50px;
-        }
-
-        #leaf01 {
-            position: absolute;
-            z-index: 999;
-            margin: -50px 0 0 -40px;
-            width: 100px;
-        }
-
-        #leaf02 {
-            position: absolute;
-            z-index: 999;
-            margin: 220px 0 0 200px;
-            width: 100px;
-        }
-    }
-}
 
 </style>

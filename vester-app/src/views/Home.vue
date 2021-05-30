@@ -37,7 +37,7 @@
       </v-col>
       <v-col lg="6" id="about">
         <div class="main-img">
-          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+          <ImageFrame ttlText='"Friendship' filename="img_test.jpg"/>
         </div>
       </v-col>
     </v-row>
@@ -88,6 +88,8 @@ import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
 import ButtonBlue from '@/components/ButtonBlue.vue'
 import ButtonWhite from '@/components/ButtonWhite.vue'
+import ImageFrame from '@/components/ImageFrame.vue'
+
 
 export default {
   name: 'Home',
@@ -96,7 +98,8 @@ export default {
     Title,
     Paragraph,
     ButtonBlue,
-    ButtonWhite
+    ButtonWhite,
+    ImageFrame
   }
 }
 </script>
@@ -126,9 +129,9 @@ export default {
 }
 
 .main-img {
-  max-width: 300px;
   display: flex;
   align-content: flex-end;
+  max-width: 400px;
 }
 
 #mainrow{

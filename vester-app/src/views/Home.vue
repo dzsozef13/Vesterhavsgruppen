@@ -9,7 +9,7 @@
         <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
       </v-col>
       <v-col>
-        <div class="main-img">
+        <div class="main-img" id="main">
           <v-img  :src="require('@/assets/il_home.svg')"></v-img>
         </div>
       </v-col>
@@ -36,7 +36,7 @@
         <ButtonWhite btnText="Om Gruppen" route="/about"/>
       </v-col>
       <v-col lg="6" id="about">
-        <div style="margin-left:110px" class="main-img">
+        <div style="margin-left:110px" class="main-img" id="frame">
           <ImageFrame ttlText='"Community' filename="thumbnail-3.jpeg"/>
         </div>
       </v-col>
@@ -190,5 +190,13 @@ export default {
   .badge-svg{
   width: 60vw;
 }
+  #main{
+    display: none;
+  }
+  #dark{
+  height: max-content;
+
+}
+
 }
 </style>

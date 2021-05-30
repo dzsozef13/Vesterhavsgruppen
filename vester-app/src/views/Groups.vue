@@ -81,6 +81,9 @@
 
             </v-col>
             <v-col lg="6">
+            <div style="margin-left:110px" class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Mikro' filename="mikro.jpg" />
+            </div>
             </v-col>
         </v-row> 
         <div id="meow"></div>
@@ -104,6 +107,9 @@ Minispejderne arbejder i patruljer. Patruljen begynder at klare sig selv på de 
 
                 </v-col>
                 <v-col lg="6">
+                    <div style="margin-left:110px" class="main-img" id="groups-img">
+                        <ImageFrame ttlText='"Mini' filename="mini.jpg" />
+                    </div>
                 </v-col>
         </v-row> 
     </v-container>
@@ -126,6 +132,9 @@ Juniorerne mødes i spejderhytten, arrangerer orienteringsløb og tager på ture
 
             </v-col>
             <v-col lg="6">
+            <div style="margin-left:110px" class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Junior' filename="junior.jpg" />
+            </div>
             </v-col>
         </v-row> 
     </v-container>
@@ -149,6 +158,9 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
 
             </v-col>
             <v-col lg="6">
+            <div style="margin-left:110px" class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Trop' filename="trop.jpg" />
+            </div>
             </v-col>
         </v-row> 
     </v-container>
@@ -166,10 +178,16 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
 
             </v-col>
             <v-col lg="6">
+            <div style="margin-left:110px" class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Klan' filename="senior.jpg" />
+            </div>
             </v-col>
         </v-row> 
         <v-row class="groups-inner">
             <v-col lg="6">
+            <div style="margin-left:80px" class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Klan' filename="klan.jpeg" />
+            </div>
             </v-col>
             <v-col lg="6" class="group-column">
                 <h5>Selvom man er blevet senior og nu er de store, gamle og rutinerede spejdere, så holder man ikke op med at tage på lejre. Mulighederne bliver kun større og større. 
@@ -190,12 +208,13 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
 
 <script>
 import Title from '@/components/Title.vue'
-
+import ImageFrame from '@/components/ImageFrame.vue'
 export default {
     name:'groups',
     components: {
     // HelloWorld
         Title,
+        ImageFrame
 
     },
     mounted () {
@@ -308,4 +327,10 @@ p{
   height: max-content;
 
 }
+#groups-img{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 </style>

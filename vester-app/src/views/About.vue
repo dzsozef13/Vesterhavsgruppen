@@ -10,7 +10,7 @@
           </v-col>
           <v-col lg="6" id="about1">
             <div style="margin-left:110px" class="main-img">
-              <ImageFrame ttlText='"Experience' filename="abousus.png"/>
+              <ImageFrame ttlText='"Friendship' filename="abousus.png"/>
             </div>
           </v-col>
         </v-row>
@@ -31,7 +31,9 @@
           
           <v-row >
             <v-col>
-              <div id="where">img</div>
+              <div style="margin-left:50px" class="main-img">
+              <ImageFrame ttlText='"Experience' filename="Tydal.jpg"/>
+            </div>
             </v-col>
             <v-col id="about3">
               <Title color="#F6F6F6" ttlText="Vi gør"/>
@@ -59,23 +61,26 @@
 
         <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="last">
           <v-row id="text-container">
-            <v-col lg="6" id="about4">
+            <v-col id="about4">
               <Title color="#eee" ttlText="Kontingent"/>
               <Paragraph color="#eee" prgText="For tiden udgør indmeldelsesgebyret 200 kr. som bl.a. dækker en T-skirt, et tørklæde og en arbejdsstofbog. Kontinget er på 850 kr. årligt, som opkræves i 2 halvårlige rater. "/>
             </v-col>
-            <v-col lg="6">
+            <v-col  >
               <Title color="#eee" ttlText="Uniformsvejledning"/>
               <Paragraph color="#eee" prgText="Grundlæggende består uniformen af selve uniformen, som findes i anorak- eller skjortefacon samt tørklæde i gruppens farver. Når det er varmt kan man anvende en mørkeblå T-shirt i stedet for spejderuniformen."/>
               <p style="color:#eee;">Mikrospejdere behøver ikke at anskaffe en spejderuniform.
               Øvrige uniformsgenstande og udstyr kan købes i Spejdersport. På tegningen kan ses, hvor de forskellige mærker skal sidde på uniformen.</p>
             </v-col>
           </v-row>
-          <v-row>
-            <h1 style="color:white;">img</h1>
-          </v-row>
-          <v-row >
 
+          <v-row >
+            <v-col lg="5" >
+              <div style="margin-right:150px"  class="main-img" id="l-image">
+              <ImageFrame ttlText='"Uniforms' filename="Tydal.jpg"/>
+            </div>
+            </v-col>
           </v-row>
+
         </v-container>
   </div>
 </template>
@@ -123,6 +128,11 @@ export default {
   color: #303960;
 }
 
+.main-img {
+  display: flex;
+  align-content: flex-end;
+  max-width: 400px;
+}
 #mainrow{
   display: flex;
   align-items: center;
@@ -196,7 +206,8 @@ export default {
 #about4{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+
 }
 #about-list{
   display: flex;
@@ -210,7 +221,13 @@ export default {
 #text-container{
   display:flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 6vh;
+  padding-right: 150px;
 }
-
+#l-image{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 </style>

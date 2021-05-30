@@ -20,7 +20,7 @@ export default {
             // font-family: 'Sansita Swashed', cursive;
             // font-family: 'Lato', sans-serif;
             font-family: 'Merriweather', serif;
-            font-size: 3vw;
+            font-size: 40px;
             font-weight: bold;
             letter-spacing: 0.2vw;
         }

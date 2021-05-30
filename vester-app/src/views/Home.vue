@@ -10,7 +10,7 @@
       </v-col>
       <v-col>
         <div class="main-img">
-          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+          <v-img  :src="require('@/assets/il_home.svg')"></v-img>
         </div>
       </v-col>
     </v-row>
@@ -36,8 +36,8 @@
         <ButtonWhite btnText="Om Gruppen" route="/about"/>
       </v-col>
       <v-col lg="6" id="about">
-        <div class="main-img">
-          <ImageFrame ttlText='"Friendship' filename="img_test.jpg"/>
+        <div style="margin-left:110px" class="main-img">
+          <ImageFrame ttlText='"Community' filename="thumbnail-3.jpeg"/>
         </div>
       </v-col>
     </v-row>
@@ -65,9 +65,9 @@
 
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
     <v-row >
-      <v-col lg="6">
-        <div class="main-img">
-          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+      <v-col lg="6" id="about">
+        <div style="margin-right:110px" class="main-img">
+          <ImageFrame ttlText='"Experience' filename="mikro.jpg"/>
         </div>
       </v-col>
       <v-col lg="6" id="about">

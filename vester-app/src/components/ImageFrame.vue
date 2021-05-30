@@ -32,7 +32,7 @@ export default {
             align-content: center;
             justify-content: flex-start;
             padding: 2px;
-            width: 300px;
+            width: 350px;
         }
 
         h1 {
@@ -59,7 +59,7 @@ export default {
         #leaf02 {
             position: absolute;
             z-index: 999;
-            margin: 220px 0 0 220px;
+            margin: 270px 0 0 270px;
             width: 150px;
         }
 

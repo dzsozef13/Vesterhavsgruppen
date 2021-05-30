@@ -9,7 +9,9 @@
             <Paragraph color="#303960" prgText=" Der er også noget man ikke må: nemlig at mobbe, være lede, ikke hjælpe hinanden. Og vi tør og vil stille krav til vores spejdere."/>
           </v-col>
           <v-col lg="6" id="about1">
-            <div>img</div>
+            <div style="margin-left:110px" class="main-img">
+              <ImageFrame ttlText='"Experience' filename="abousus.png"/>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -26,6 +28,7 @@
       </v-container>
 
         <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="third">
+          
           <v-row >
             <v-col>
               <div id="where">img</div>
@@ -81,6 +84,7 @@
 
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
+import ImageFrame from '@/components/ImageFrame.vue'
 
 export default {
   name:'About',
@@ -88,6 +92,7 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
+    ImageFrame
 
   },
   mounted () {
@@ -135,7 +140,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-#dark-about{
+#dark{
   color: #303960;
   height: 90vh;
 }

@@ -2,7 +2,7 @@
   <div>
   <v-container fluid class="section-1"  style="max-width: unset; margin:0;" >
       <v-row id="mainrow" >
-        <v-col class="asd" lg="12">
+        <v-col class="asd" lg="12" style="margin-left:10px">
           <Title color="#303960" ttlText="Contact"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>

@@ -17,15 +17,15 @@ export default {
 <style lang="scss">
 #title{
     color: #637CDF;
-    font-size: 2vw;
+    font-size: 30px;
 }
 #name{
     font-weight: bold;
     color: #303960;
-    font-size: 1.3vw;
+    font-size: 25px;
 }
 #info{
     color:#303960;
-    font-size: 1vw;
+    font-size: 20px;
 }
 </style>

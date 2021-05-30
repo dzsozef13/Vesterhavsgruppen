@@ -31,14 +31,13 @@
             </v-col>
                   <v-col>
                     <div class="main-img">
+                    <v-img :src="require('@/assets/il_home.svg')"></v-img>
                     </div>
                 </v-col>
             </v-row>
         </v-container>
-        <v-container fluid class="section-wood" style="max-width: unset; margin:0;" id="dark-schedule">
-            
-            <v-img :src="require('../assets/wood.svg')" class="wood">
-            <div class="wood-bg">
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-schedule">
+
                 <v-row style="margin:0;" id="row-up">
                     <v-col lg="4" id="head" style="margin:0;">
                         <Title color="#eee" ttlText="Spejder" id="scouts"/>
@@ -52,18 +51,14 @@
                     img
                 </v-col>
                 </v-row>
-            </div>
-            </v-img>
-            
+
         </v-container>
 
-        <v-container fluid class="section-wood" style="max-width: unset; margin:0;" id="dark-schedule">
-            
-            <v-img :src="require('../assets/wood.svg')" class="wood">
-            <div class="wood-bg">
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-schedule">
+
                 <v-row style="margin:0;" id="row-up">
                     <v-col lg="4" id="head" style="margin:0;">
-                        <Title color="#eee" ttlText="Leder" id="leder"/>
+                        <Title color="#eee" ttlText="Spejder" id="scouts"/>
                     </v-col>
                 </v-row>
                 <v-row id="row-news" sm="12" style="margin:0;">
@@ -74,9 +69,7 @@
                     img
                 </v-col>
                 </v-row>
-            </div>
-            </v-img>
-            
+
         </v-container>
 </div>
 </template>
@@ -107,18 +100,6 @@ export default {
   @include section();
   background-color: #eee;
   color: rgb(35, 33, 56);
-}
-.section-wood{
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    min-height: 70vh;
-    margin: 0;
-}
-#wood-bg{
-    width: 100vh;
-    min-height: 70vh;
-    padding: 10vh 5vw 5vh 10vw;
 }
 
     #button-schedule{
@@ -170,9 +151,6 @@ export default {
 
     }
     #scouts{
-        margin-left: 15vw;
-    }
-    #leder{
         margin-left: 15vw;
     }
 

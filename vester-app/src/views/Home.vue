@@ -6,7 +6,7 @@
       <v-col class="asd" >
         <Title color="#303960" ttlText="Velkommen"/>
         <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
-        <ButtonBlue btnText="Bliv Spejder" route="/about"/>
+        <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
       </v-col>
       <v-col>
         <div class="main-img">

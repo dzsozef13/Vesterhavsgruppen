@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-      <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
+      <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-about">
         <v-row sm="12">
           <v-col lg="6" sm="12" id="about1">
             <Title color="#303960" ttlText="About Us"/>
@@ -112,6 +112,11 @@ export default {
   background-color: #eee;
   color: #303960;
 }
+.section-3 {
+  @include section();
+  background-color: #eee;
+  color: #303960;
+}
 
 #mainrow{
   display: flex;
@@ -130,13 +135,14 @@ export default {
   justify-content: center;
   align-items: center;
 }
-#dark{
+#dark-about{
   color: #303960;
   height: 90vh;
 }
 #goals-title{
   margin-bottom: 4vh;
   letter-spacing: 0.2vw;
+  font-size: 3vw;
 }
 .goals{
   color: #303960;
@@ -201,4 +207,5 @@ export default {
   flex-direction: column;
   padding-bottom: 6vh;
 }
+
 </style>

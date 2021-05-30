@@ -2,16 +2,72 @@
 <div class="group">
     <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
         <v-row id="mainrow" >
-        <v-col class="asd" >
+        <v-col class="asd1" >
             <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
-            <ButtonBlue btnText="Bliv Spejder" route="/about"/>
+            <div id="button-container">
+                    <v-container id="component" >
+                        <v-btn id="square-button" 
+                        dark
+                        depressed
+                        tile
+                        @click="$vuetify.goTo('#anchor1')"
+                        >
+                            <h4> Mikro (0. - 1. klasse) </h4>
+                        </v-btn>
+                    </v-container>
+
+                    <v-container id="component" >
+                        <v-btn id="square-button" 
+                        dark
+                        depressed
+                        tile
+                        @click="$vuetify.goTo('#anchor2')"
+                        >
+                            <h4> Mini (2. - 3. klasse) </h4>
+                        </v-btn>
+                    </v-container>
+
+                    <v-container id="component" >
+                        <v-btn id="square-button" 
+                        dark
+                        depressed
+                        tile
+                        @click="$vuetify.goTo('#anchor3')"
+                        >
+                            <h4> Junior (4. 6. klasse) </h4>
+                        </v-btn>
+                    </v-container>
+
+                    <v-container id="component" >
+                        <v-btn id="square-button" 
+                        dark
+                        depressed
+                        tile
+                        @click="$vuetify.goTo('#anchor4')"
+                        >
+                            <h4> Trop (7. - 9. klasse) </h4>
+                        </v-btn>
+                    </v-container>
+
+                    <v-container id="component" >
+                        <v-btn id="square-button" 
+                        dark
+                        depressed
+                        tile
+                        @click="$vuetify.goTo('#anchor5')"
+                        >
+                            <h4> Klan (efter 9. klasse) </h4>
+                        </v-btn>
+                    </v-container>
+        </div>
         </v-col>
         </v-row>
     </v-container>
 
-    <v-container fluid class="groups">
+    <v-container fluid class="groups" >
+        
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column">
+            <v-col lg="6" class="group-column"  id="anchor1">
                 <h1>Mikro</h1>
                 <h2>Tirsdag kl. 16:30 - 18:00</h2>
                 <h5>Mikrospejd er at være sammen, lære, sanse og lege. Vi bygger huler, snitter, laver bål og mange andre ting. Vi har spejderhytten som vores faste tilholdssted, her findes udstyr og de ting spejderne har samlet og som vi alle sammen bruger. I spejderhytten bruger vi den del tid på at synge, lege og fortælle historier.
@@ -27,11 +83,12 @@
             <v-col lg="6">
             </v-col>
         </v-row> 
+        <div id="meow"></div>
     </v-container>
     
         <v-container fluid class="groups" id="light">
             <v-row class="groups-inner">
-                <v-col lg="6" class="group-column">
+                <v-col lg="6" class="group-column" id="anchor2">
                     <h1>Mini</h1>
                     <h2 style="color:#49BFA3;">Tirsdag kl. 16:30 - 18:00</h2>
                     <h5>Minispejderne har naturen som legeplads. Vi tilbringer meget tid i naturen, mens vi træner vores spejderfærdigheder. 
@@ -52,7 +109,7 @@ Minispejderne arbejder i patruljer. Patruljen begynder at klare sig selv på de 
     </v-container>
         <v-container fluid class="groups">
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column">
+            <v-col lg="6" class="group-column" id="anchor3">
                 <h1>Junior</h1>
                 <h2>Tirsdag kl. 19:00 - 20:30</h2>
                 <h5>Juniorspejdere er meget aktive. Vi tager på turer og prøver nye aktiviteter, hvor vi lærer at værne om naturen og klare os selv.
@@ -74,7 +131,7 @@ Juniorerne mødes i spejderhytten, arrangerer orienteringsløb og tager på ture
     </v-container>
         <v-container fluid class="groups" id="light">
         <v-row class="groups-inner" id="trop">
-            <v-col lg="6" class="group-column">
+            <v-col lg="6" class="group-column" id="anchor4">
                 <h1>Trop</h1>
                 <h2 style="color:#49BFA3;">Onsdag kl. 19:30 - 21:00</h2>
                 <h5>Tropsspejdere laver aktiviteter, der kræver mere af os end før. Her dyrkes kammeratskabet, de sjove og udfordrende aktiviteter. Samtidig får vi mere ansvar for os selv og hinanden.
@@ -97,7 +154,7 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
     </v-container>
         <v-container fluid class="groups">
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column">
+            <v-col lg="6" class="group-column" id="anchor5">
                 <h1>Klan</h1>
                 <h2>Torsdag kl. 19:00 - 21:00</h2>
                 <h5>Klanen er den næste gren i rækken. Efter 3 år som tropsspejder bliver man seniorspejder. Klanen er for drenge, piger, mænd, kvinder, herre og damer og hvad der nu ellers findes af sjove typer i alderen 16-25 år.
@@ -133,18 +190,20 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
 
 <script>
 import Title from '@/components/Title.vue'
-import ButtonBlue from '@/components/ButtonBlue.vue'
 
 export default {
     name:'groups',
     components: {
     // HelloWorld
         Title,
-        ButtonBlue
+
     },
     mounted () {
         window.scrollTo(0, 0)
-    }
+    },
+
+
+
 }
 </script>
 
@@ -193,5 +252,60 @@ p{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+#component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: max-content;
+    margin: 0 30px 64px 0;
+    padding: 0;
+
+    #square-button {
+        // body
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        width: max-content;
+        height: 72px;
+        margin: 0;
+        // style
+        text-align: center;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        background-color: white;
+        //border
+        border-style: solid;
+        border-width: 4px;
+        border-color: #303960;
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0;
+            padding: 0 16px 0 16px;
+            color: #303960;
+        }
+        box-shadow: 0 8px 0 #637CDF;
+    }
+}
+
+#button-container{
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.asd1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: max-content;
+
 }
 </style>

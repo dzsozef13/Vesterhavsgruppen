@@ -5,7 +5,48 @@
             <v-row id="mainrow" >
             <v-col class="asd" >
                 <Title color="#303960" ttlText="Gallery"/>
-                <SquareButton btnText="Bliv Spejder" route="/about"/>
+                <div id="button-gallery">
+                                    <v-container id="component" >
+                                        <v-btn id="square-button" 
+                                        dark
+                                        depressed
+                                        tile
+                                        @click="$vuetify.goTo('#anchorA')"
+                                        >
+                                            <h4> Korpslejr 2009 </h4>
+                                        </v-btn>
+                                    </v-container>
+                                    <v-container id="component" >
+                                        <v-btn id="square-button" 
+                                        dark
+                                        depressed
+                                        tile
+                                        @click="$vuetify.goTo('#anchorB')"
+                                        >
+                                            <h4> Gruppetur 2010 </h4>
+                                        </v-btn>
+                                    </v-container>
+                                    <v-container id="component" >
+                                        <v-btn id="square-button" 
+                                        dark
+                                        depressed
+                                        tile
+                                        @click="$vuetify.goTo('#anchorC')"
+                                        >
+                                            <h4> Tropssommerlejr 2011 </h4>
+                                        </v-btn>
+                                    </v-container>
+                                    <v-container id="component" >
+                                        <v-btn id="square-button" 
+                                        dark
+                                        depressed
+                                        tile
+                                        @click="$vuetify.goTo('#anchorD')"
+                                        >
+                                            <h4> Juniorsommerlejr 2011 </h4>
+                                        </v-btn>
+                                    </v-container>
+            </div>
             </v-col>
             <v-col>
                 <div>img</div>
@@ -16,19 +57,21 @@
         <v-container fluid class="section-2" id="carousels" style="max-width: unset; margin:0;" >
             <v-row >
             <v-col lg="12" id="car-col" >
-                <template>
+                <template >
                     <v-carousel
                         cycle
                         height="800"
                         hide-delimiter-background
                         show-arrows-on-hover
-                        id="car"
+                        class="car"
+                        id="anchorA"
                     >
                     <template v-slot:prev="{ on, attrs }">
                     <v-btn
                         color="success"
                         v-bind="attrs"
                         v-on="on"
+                        
                     >Previous slide</v-btn>
                     </template>
                     <template v-slot:next="{ on, attrs }">
@@ -68,7 +111,8 @@
                         height="800"
                         hide-delimiter-background
                         show-arrows-on-hover
-                        id="car"
+                        class="car"
+                        id="anchorB"
                     >
                     <template v-slot:prev="{ on, attrs }">
                     <v-btn
@@ -114,7 +158,8 @@
                         height="800"
                         hide-delimiter-background
                         show-arrows-on-hover
-                        id="car"
+                        class="car"
+                        id="anchorC"
                     >
                     <template v-slot:prev="{ on, attrs }">
                     <v-btn
@@ -160,7 +205,8 @@
                         height="800"
                         hide-delimiter-background
                         show-arrows-on-hover
-                        id="car"
+                        class="car"
+                        id="anchorD"
                     >
                     <template v-slot:prev="{ on, attrs }">
                     <v-btn
@@ -253,15 +299,12 @@
 
 <script>
 import Title from '@/components/Title.vue'
-import SquareButton from '@/components/SquareButton.vue'
-
 
 export default {
   name: 'Gallery',
   components: {
     // HelloWorld
     Title,
-    SquareButton
   },
   data () {
     return {
@@ -595,7 +638,7 @@ export default {
 #mainrow{
   display: flex;
   align-items: center;
-  padding: 10vh 5vw 5vh 10vw;
+  padding: 10vh 5vw 6vh 1vw;
 
 }
 #car-col{
@@ -672,5 +715,12 @@ figure{
     -webkit-filter: contrast(150%);
 	filter: contrast(150%);
 }
+#button-gallery{
 
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
 </style>

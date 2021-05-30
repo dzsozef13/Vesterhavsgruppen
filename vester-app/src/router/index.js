@@ -6,6 +6,8 @@ import About from '../views/About.vue'
 import Gallery from '../views/Gallery.vue'
 import Contact from '../views/Contact.vue'
 import Groups from '../views/Groups.vue'
+import Schedule from '../views/Schedule.vue'
+import BecomeScout from '../views/BecomeScout.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +42,16 @@ const routes = [
     path: '/groups',
     name: 'Groups',
     component: Groups
+  },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: Schedule
+  },
+  {
+    path: '/becomescout',
+    name: 'BecomeScout',
+    component: BecomeScout
   }
 ]
 

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Nav from '../views/Nav.vue'
 import Home from '../views/Home.vue'
 import News from '../views/News.vue'
 import About from '../views/About.vue'
@@ -16,6 +17,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/nav',
+    name: 'Nav',
+    component: Nav
   },
   {
     path: '/news',

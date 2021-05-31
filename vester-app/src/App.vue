@@ -1,6 +1,9 @@
 <template>
 <v-app>
   <div id="app">
+    <v-container class="hidden-md-and-up" style="padding:0;">
+      <BurgerButton/>
+    </v-container>
     <v-container id="nav" style="max-width: unset;">
 
       <div>
@@ -63,6 +66,8 @@
 
 <script>
 
+import BurgerButton from '@/components/BurgerButton.vue'
+
 export default {
   name: 'App',
   data() {
@@ -77,6 +82,9 @@ export default {
         index: 0,
       }
     }
+  },
+  components: {
+    BurgerButton
   },
   methods: {
     test() {
@@ -104,14 +112,12 @@ export default {
 
 <style lang="scss">
 //fonts
-
 //sansita
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');
 //merriweather
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 //lato
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -165,9 +171,6 @@ export default {
     width: 20vh;
     height: 8vh;
   }
-
-
-
 
 #nav {
   display: flex;

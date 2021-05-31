@@ -1,9 +1,9 @@
 <template>
-  <div class="about">
+  <div class="gallery">
 
-        <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
-            <v-row id="mainrow" >
-            <v-col class="asd" >
+        <v-container fluid class="section-gallery" style="max-width: unset; margin:0;" >
+            <v-row >
+            <v-col lg="12" sm="12" class="gal-container">
                 <Title color="#303960" ttlText="Gallery"/>
                 <div id="button-gallery">
                                     <v-container id="component" >
@@ -48,13 +48,10 @@
                                     </v-container>
             </div>
             </v-col>
-            <v-col>
-                <div>img</div>
-            </v-col>
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-2" id="carousels" style="max-width: unset; margin:0;" >
+        <v-container fluid class="section-gallery" id="carousels" style="max-width: unset; margin:0;" >
             <v-row >
             <v-col lg="12" id="car-col" >
                 <template >
@@ -245,13 +242,13 @@
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-1" id="external" style="max-width: unset; margin:0; padding:0;">
-            <v-row>
-                <v-col lg="12" id="header">
+        <v-container fluid class="section-gallery" id="external" style="max-width: unset; margin:0;">
+            <v-row align="center">
+                <v-col lg="12" sm="12" align="center"  >
                     <h1>External websites with pictures from our scouts meetings!</h1>
                 </v-col>
             </v-row>
-            <v-row style="margin:0; padding:0">
+            <v-row style="margin:0; padding:0" >
                 <v-col lg="12" id="external-links" style="margin:0; padding:0" >
                     <div class="hover">
                     <a href="http://vesterhavsgruppen.neffets.dk/" target="_blank" > 
@@ -609,7 +606,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@mixin section {
+@mixin section-gal {
   display: flex;
   align-items: left;
   justify-content: center;
@@ -617,30 +614,22 @@ export default {
   margin: 0;
 }
 
-.section-2 {
-  @include section();
+.section-gallery {
+  @include section-gal();
   background-color: #eee;
   color: rgb(35, 33, 56);
   
+}
+.gal-container{
+    padding: 70px 10vw 0 10vw;
+
 }
 #carousels{
     display: flex;
     flex-direction: column;
 }
 
-.asd {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  height: max-content;
-}
 
-#mainrow{
-  display: flex;
-  align-items: center;
-  padding: 10vh 5vw 6vh 1vw;
-
-}
 #car-col{
     padding:0;
     margin-bottom: 10vh;
@@ -653,7 +642,6 @@ export default {
 #external{
     display: flex;
     flex-direction: column;
-    
 }
 #external-links{
     display: flex;
@@ -666,11 +654,7 @@ export default {
 #first{
     margin-left: 0;
 }
-#header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #tag{
     z-index: 1111;
     color:white;
@@ -681,7 +665,7 @@ export default {
     margin: 3vh;
     display: flex;
     justify-content: center;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 2px black;
 
 
 }
@@ -722,5 +706,61 @@ figure{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+}
+
+@media screen and (max-width:600px) {
+    .gal-container{
+        padding: 10vh 24px 10vh 24px
+
+    }
+    #button-gallery{
+
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #external-links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
+    .img1{
+    width: 70vw;
+    height:70vw;
+    margin-left:0;
+    }
+    figure{
+        width: 70vw;
+        height: 70vw;
+        margin: 2vh 0 0 0
+
+    }
+    .hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 100px 0 100px 0;
+    }
+    #tag{
+    z-index: 1111;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 3vh;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+
+
+}
+
 }
 </style>

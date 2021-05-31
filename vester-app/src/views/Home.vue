@@ -117,7 +117,7 @@ export default {
 
 .section-1 {
   @include section();
-  padding: 100px 10vw 0 10vw
+  padding: 70px 10vw 0 10vw
 }
 
 .section-2 {

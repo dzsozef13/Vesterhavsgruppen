@@ -133,7 +133,7 @@ Juniorerne mødes i spejderhytten, arrangerer orienteringsløb og tager på ture
             </v-col>
             <v-col lg="6">
             <div style="margin-left:110px" class="main-img" id="groups-img">
-                <ImageFrame ttlText='"Junior' filename="junior.jpg" />
+                <ImageFrame ttlText='"Junior' filename="junior.jpeg" />
             </div>
             </v-col>
         </v-row> 
@@ -159,7 +159,7 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
             </v-col>
             <v-col lg="6">
             <div style="margin-left:110px" class="main-img" id="groups-img">
-                <ImageFrame ttlText='"Trop' filename="trop.jpg" />
+                <ImageFrame ttlText='"Trop' filename="tropp.jpeg" />
             </div>
             </v-col>
         </v-row> 
@@ -179,7 +179,7 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
             </v-col>
             <v-col lg="6">
             <div style="margin-left:110px" class="main-img" id="groups-img">
-                <ImageFrame ttlText='"Klan' filename="senior.jpg" />
+                <ImageFrame ttlText='"Klan' filename="klan1.jpeg" />
             </div>
             </v-col>
         </v-row> 

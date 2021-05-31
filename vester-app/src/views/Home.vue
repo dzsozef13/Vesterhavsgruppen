@@ -165,13 +165,13 @@ export default {
 #gradient-container {
   display: flex;
   align-items:flex-end;
-  height: 121vh;
-  width: 100vw;
+  height: 124vh;
+  width: 110vw;
 }
 
 #gradient {
   height: 80vh;
-  width: 100vw;
+  width: 110vw;
   z-index: 111;
   background: rgb(48,57,96);
   background: linear-gradient(0deg, rgba(48,57,96,1) 0%, rgba(48,57,96,0) 100%);
@@ -189,6 +189,9 @@ export default {
   }
   #dark{
     height: max-content;
+  }
+  #gradient{
+    display: none;
   }
 }
 </style>

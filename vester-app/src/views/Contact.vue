@@ -1,8 +1,8 @@
 <template class="contact">
   <div>
-  <v-container fluid class="section-1"  style="max-width: unset; margin:0;" >
-      <v-row id="mainrow" >
-        <v-col class="asd" lg="12" style="margin-left:10px">
+  <v-container fluid class="section-contact"  style="max-width: unset; margin:0;" >
+      <v-row >
+        <v-col lg="12" >
           <Title color="#303960" ttlText="Contact"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>
@@ -11,34 +11,7 @@
         </v-col>
       </v-row>
   </v-container>
-    <v-container fluid style="max-width: unset; margin:0; padding:0;" id="map">
-    <v-row lg="12"  style="margin:0;" >
-      <v-col lg="8"  style="padding:0;">
-        <div id="map">
-        <v-img id="esbjerg" :src="require('../assets/Esbjerg_map.png')" >
-        </v-img>
-        </div>
-      </v-col>
-      <v-col lg="4"  style="padding:0;" id="dark-column">
-        <div id="one">
-          <v-img :src="require('../assets/bakkevej.jpg')"></v-img>
-        </div>
-        <div id="two">
-          <h1>
-            Vesterhavsgruppens hytter
-          </h1>
-          <p>
-            Gruppen har en mødehytte på Bakkevej 14, på en grund vi deler med Sct. Georgsgilderne, De Grønne Pigespejdere og FDF.
-            I hytten er der et stort fælles møderum, 4 patruljelokaler, et lederrum og et moderne køkken.
-            <br>
-            Der er god plads uden om hytten, så vi kan arbejde med pionerarbejde og båltænding.
-            I hytten er der depot med udstyr så hele gruppen kan tage på teltlejr på en gang.
-          </p>
-        </div>
-        
-      </v-col>
-    </v-row>
-  </v-container>
+
   </div>
 </template>
 
@@ -86,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@mixin section {
+@mixin section-con {
   display: flex;
   align-items: left;
   justify-content: center;
@@ -96,24 +69,12 @@ export default {
   margin: 0;
 }
 
-.section-1 {
-  @include section();
+.section-contact {
+  @include section-con();
   background-color: #eee;
   color: rgb(35, 33, 56);
 }
 
-.asd {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-}
-
-#mainrow{
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
-
-}
 .workers{
   display: flex;
   flex-direction: row;
@@ -152,5 +113,16 @@ export default {
   p{
     font-size: 1.3vw;
     margin-top: 3vh;
+  }
+
+  @media screen and (max-width:600px) {
+    .section-contact {
+    padding: 10vh 24px 10vh 24px
+  }
+    .workers{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
   }
 </style>

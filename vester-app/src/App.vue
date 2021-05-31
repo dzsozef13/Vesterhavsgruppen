@@ -37,7 +37,7 @@
 
     <v-container style="max-width: unset; margin:0;" id="footer">
       <v-row id="inner-footer">
-        <v-col lg="5" class="column-footer" id="first-column">
+        <v-col lg="5" sm="12" class="column-footer" id="first-column">
               <h1>Follow us!</h1>
               <div id="fb">
               <v-icon style="font-size: 3em; color: Tomato;">fab fa-facebook</v-icon>
@@ -46,7 +46,7 @@
 
             
         </v-col>
-        <v-col lg="7" class="column-footer">
+        <v-col lg="7" sm="12" class="column-footer">
           <div id="sponsor">
             <v-img id="sponsor-logo" :src="require('../src/assets/ok-logoo.svg')"></v-img>
             <h1 id="pad">Our sponsors</h1>
@@ -273,38 +273,29 @@ export default {
   #logo{
     width: 80%;
   }
+  #nav{
+    padding-left: 4vw;
+  }
   h1{
     font-size: 1.5rem;
   }
   p{
     font-size: 0.8rem;
   }
-  .column-footer{
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0;
-    padding-bottom: 0;
-  }
-  #inner-footer{
-    display: flex;
-    flex-direction: column;
-        margin: 0;
-    padding-bottom: 0;
-  }
-  #footer{
-    display: flex;
-    justify-content: center;
-
-  }
-    #fb{
-    padding: 3vh 0 0 0;
-  }
   #sponsor-logo {
     width: 10vh;
     height: 4vh;
+  }
+  .column-footer{
+    height: max-content;
+    margin: 20px;
+  }
+  #footer{
+    height: auto;
+  }
+  #pad{
+    font-size: 27px;
+    margin: 0;
   }
 }
 

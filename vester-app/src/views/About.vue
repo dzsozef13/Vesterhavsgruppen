@@ -1,15 +1,14 @@
 <template>
   <div class="about">
       <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-about">
-        <v-row sm="12">
-          <v-col lg="6" sm="12" class="about1">
+        <v-row id="flex">
+          <v-col lg="6" sm="12" class="mobile">
             <Title color="#303960" ttlText="About Us"/>
-            <Paragraph color="#303960" prgText="Vi bruger ikke kun kort og kompas til at finde vej. Det er nemmere med GPS. Det andet har vi nemlig lært. "/>
-            <Paragraph color="#303960" prgText="Vi følger ikke altid gamle damer over vejen, vi vil hellere gå lange ture, lave bål, riste skumfiduser, bygge med rafter, synge, danse, lege, få skøre ideer og afprøve dem, hygge i soveposen, grine, fnise, spejderdrille."/>
-            <Paragraph color="#303960" prgText=" Der er også noget man ikke må: nemlig at mobbe, være lede, ikke hjælpe hinanden. Og vi tør og vil stille krav til vores spejdere."/>
+            <Paragraph color="#303960" prgText="Vi bruger ikke kun kort og kompas til at finde vej. Det er nemmere med GPS. Det andet har vi nemlig lært. Vi følger ikke altid gamle damer over vejen, vi vil hellere gå lange ture, lave bål, riste skumfiduser, bygge med rafter, synge, danse, lege, få skøre ideer og afprøve dem, hygge i soveposen, grine, fnise, spejderdrille."/>
+            <Paragraph color="#303960" prgText="Vi følger ikke altid gamle damer over vejen, vi vil hellere gå lange ture, lave bål, riste skumfiduser, bygge med rafter, synge, danse, lege, få skøre ideer og afprøve dem, hygge i soveposen, grine, fnise, spejderdrille. Der er også noget man ikke må: nemlig at mobbe, være lede, ikke hjælpe hinanden. Og vi tør og vil stille krav til vores spejdere."/>
           </v-col>
-          <v-col lg="6" sm="12" class="about1">
-            <div style="margin-left:110px" class="main-img">
+          <v-col lg="6" sm="12" class="mobile">
+            <div class="main-img" id="f-image">
               <ImageFrame ttlText='"Friendship' filename="abousus.png"/>
             </div>
           </v-col>
@@ -17,12 +16,12 @@
       </v-container>
 
       <v-container fluid class="section-3" style="max-width: unset; margin:0;" id="nogle">
-        <v-row lg="12" sm="12">
+        <v-row >
           <v-col lg="12" sm="12" id="about2">
             <h1 id="goals-title">Nogle af vores mål er</h1>
-            <p class="goals">Vi vil være <span id="blue"> fremadrettede </span> og beslutsomme</p>
-            <p class="goals">Vi tør <span id="blue"> udvikle </span> børn og unge til at tage del i og ansvar for sig selv og samfundet</p>
-            <p class="goals">Vi tør at vise <span id="blue"> overskud </span> og risikovilje</p>
+            <p class="goal">Vi vil være <span id="blue"> fremadrettede </span> og beslutsomme</p>
+            <p class="goal">Vi tør <span id="blue"> udvikle </span> børn og unge til at tage del i og ansvar for sig selv og samfundet</p>
+            <p class="goal">Vi tør at vise <span id="blue"> overskud </span> og risikovilje</p>
           </v-col>
         </v-row>
       </v-container>
@@ -31,7 +30,7 @@
           
           <v-row >
             <v-col lg="6" sm="12">
-              <div style="margin-left:50px" class="main-img">
+              <div class="main-img">
               <ImageFrame ttlText='"Experience' filename="Tydal.jpg"/>
             </div>
             </v-col>
@@ -138,18 +137,6 @@ export default {
   align-items: center;
 }
 
-#about1{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-}
-#about2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 #dark{
   color: #303960;
   height: 90vh;
@@ -157,11 +144,11 @@ export default {
 #goals-title{
   margin-bottom: 4vh;
   letter-spacing: 0.2vw;
-  font-size: 3vw;
+  font-size: 45px;
 }
-.goals{
+.goal{
   color: #303960;
-  font-size: 1.5vw;
+  font-size: 25px;
   margin-top: 2vh;
 }
 #nogle{
@@ -230,12 +217,18 @@ export default {
   align-items: center;
   height: 100%;
 }
+#f-image{
+margin: 30px 0px 0px 110px;
+}
 
 @media screen and (max-width:600px) {
   #last{
     width: 100%;
     height: auto;
     flex-direction: column;
+  }
+  #f-image{
+  margin: 0px;
   }
   #l-image{
     margin-bottom: 10vh;
@@ -251,5 +244,38 @@ export default {
   #sticker{
     height: auto;
   }
+  .section-1{
+    padding: 0;
+  }
+
+
+  #goals-title{
+    margin-bottom: 4vh;
+    letter-spacing: 0.2vw;
+    font-size: 25px;
+  }
+  .goal{
+    color: #303960;
+    font-size: 16px;
+    margin-top: 2vh;
+    text-align: center;
+  }
+  #third{
+    height: 100vh;
+  }
+  #white-text{
+    font-size: 17px;
+  }
+  #about3{
+  justify-content: flex-start;
+
 }
+.mobile{
+  padding: 0;
+}
+#flex{
+  display: block;
+}
+}
+
 </style>

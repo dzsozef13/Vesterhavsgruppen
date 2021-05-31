@@ -2,6 +2,7 @@
 <div id="home" >
 
   <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
+    
     <v-row>
       <v-col lg="8" sm="12">
         <Title color="#303960" ttlText="Velkommen"/>
@@ -14,6 +15,7 @@
         </div>
       </v-col>
     </v-row>
+    
   </v-container>
 
   <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
@@ -126,7 +128,8 @@ export default {
 }
 
 .dark {
-  background-color: #303960 ;
+  background: url('../assets/Artboard1.png');
+  background-size: contain ;
 }
 
 .light {
@@ -139,6 +142,12 @@ export default {
 
 #video {
   min-height: 100vh;
+  width: auto;
+}
+.wood{
+  height: 100vh ;
+  width: 100vw ;
+
 }
 
 #badges {

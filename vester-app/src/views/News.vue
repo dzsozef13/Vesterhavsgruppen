@@ -12,7 +12,7 @@
     </v-row>
   </v-container>
 
-  <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
+  <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark">
     <v-row id="row-news">
       <v-col lg="6" sm="12">
         <v-container class="sticky-note">
@@ -96,7 +96,10 @@ export default {
   display: flex;
   align-content: flex-end;
 }
-
+.dark {
+  background: url('../assets/Artboard1.png');
+  background-size: contain ;
+}
 #mainrow{
   display: flex;
   align-items: center;

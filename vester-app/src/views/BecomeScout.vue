@@ -16,7 +16,7 @@
             </v-row>
         </v-container>
 
-          <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark">
+          <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark">
             <v-row sm="12">
             <v-col lg="6" sm="12" id="about">
                 <Title color="#eee" ttlText="Spejderen får den første mødedag udleveret 'Velkommen til DDS' pjecen samt et indmeldelseskort."/>
@@ -95,6 +95,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.dark {
+  background: url('../assets/Artboard1.png');
+  background-size: contain ;
 }
 #nogle{
   height: 60vh;

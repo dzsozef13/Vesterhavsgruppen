@@ -36,7 +36,7 @@
                 </v-col>
             </v-row>
         </v-container>
-        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-schedule">
+        <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark-schedule">
 
                 <v-row style="margin:0;" id="row-up">
                     <v-col lg="4" id="head" style="margin:0;">
@@ -54,7 +54,7 @@
 
         </v-container>
 
-        <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="dark-schedule">
+        <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark-schedule">
 
                 <v-row style="margin:0;" id="row-up">
                     <v-col lg="4" id="head" style="margin:0;">
@@ -153,5 +153,9 @@ export default {
     #scouts{
         margin-left: 15vw;
     }
+    .dark {
+        background: url('../assets/Artboard1.png');
+        background-size: contain ;
+        }
 
 </style>

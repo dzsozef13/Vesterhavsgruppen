@@ -1,10 +1,14 @@
 <template>
 <div class="group">
-    <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
-        <v-row id="mainrow" >
-        <v-col class="asd1" >
-            <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
-            <div id="button-container">
+    <v-container fluid class="section-gr" style="max-width: unset; margin:0;" >
+        <v-row >
+            <v-row>
+                <v-col lg="12">
+                    <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
+                </v-col>
+                
+            </v-row>
+        <v-col lg="9" sm="12" id="column-buttons">
                     <v-container id="component" >
                         <v-btn id="square-button" 
                         dark
@@ -59,7 +63,6 @@
                             <h4> Klan (efter 9. klasse) </h4>
                         </v-btn>
                     </v-container>
-        </div>
         </v-col>
         </v-row>
     </v-container>
@@ -67,7 +70,7 @@
     <v-container fluid class="groups" >
         
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column"  id="anchor1">
+            <v-col lg="6" class="group-column"   id="anchor1">
                 <h1>Mikro</h1>
                 <h2>Tirsdag kl. 16:30 - 18:00</h2>
                 <h5>Mikrospejd er at være sammen, lære, sanse og lege. Vi bygger huler, snitter, laver bål og mange andre ting. Vi har spejderhytten som vores faste tilholdssted, her findes udstyr og de ting spejderne har samlet og som vi alle sammen bruger. I spejderhytten bruger vi den del tid på at synge, lege og fortælle historier.
@@ -80,13 +83,13 @@
                 <p>Email: mikro@vesterhavsgruppen.dk</p>
 
             </v-col>
-            <v-col lg="6">
-            <div style="margin-left:110px" class="main-img" id="groups-img">
-                <ImageFrame ttlText='"Mikro' filename="mikro.jpg" />
+            <v-col lg="6" align="center" >
+            <div class="main-img" id="groups-img">
+                <ImageFrame ttlText='"Mikro' filename="mikro.jpg"  />
             </div>
             </v-col>
         </v-row> 
-        <div id="meow"></div>
+
     </v-container>
     
         <v-container fluid class="groups" id="light">
@@ -106,8 +109,8 @@ Minispejderne arbejder i patruljer. Patruljen begynder at klare sig selv på de 
                     <p>Email: mini@vesterhavsgruppen.dk</p>
 
                 </v-col>
-                <v-col lg="6">
-                    <div style="margin-left:110px" class="main-img" id="groups-img">
+                <v-col lg="6" align="center">
+                    <div class="main-img" id="groups-img">
                         <ImageFrame ttlText='"Mini' filename="mini.jpg" />
                     </div>
                 </v-col>
@@ -115,7 +118,7 @@ Minispejderne arbejder i patruljer. Patruljen begynder at klare sig selv på de 
     </v-container>
         <v-container fluid class="groups">
         <v-row class="groups-inner">
-            <v-col lg="6" class="group-column" id="anchor3">
+            <v-col lg="6" class="group-column"  id="anchor3">
                 <h1>Junior</h1>
                 <h2>Tirsdag kl. 19:00 - 20:30</h2>
                 <h5>Juniorspejdere er meget aktive. Vi tager på turer og prøver nye aktiviteter, hvor vi lærer at værne om naturen og klare os selv.
@@ -131,8 +134,8 @@ Juniorerne mødes i spejderhytten, arrangerer orienteringsløb og tager på ture
                 <p>Email: junior@vessterhavsgruppen.dk</p>
 
             </v-col>
-            <v-col lg="6">
-            <div style="margin-left:110px" class="main-img" id="groups-img">
+            <v-col lg="6" align="center">
+            <div class="main-img" id="groups-img" >
                 <ImageFrame ttlText='"Junior' filename="junior.jpeg" />
             </div>
             </v-col>
@@ -157,8 +160,8 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
                 <p>Email: trop@vessterhavsgruppen.dk</p>
 
             </v-col>
-            <v-col lg="6">
-            <div style="margin-left:110px" class="main-img" id="groups-img">
+            <v-col lg="6" align="center">
+            <div class="main-img" id="groups-img" >
                 <ImageFrame ttlText='"Trop' filename="tropp.jpeg" />
             </div>
             </v-col>
@@ -177,15 +180,15 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
                 </p>
 
             </v-col>
-            <v-col lg="6">
-            <div style="margin-left:110px" class="main-img" id="groups-img">
+            <v-col lg="6" align="center">
+            <div  class="main-img" id="groups-img" >
                 <ImageFrame ttlText='"Klan' filename="klan1.jpeg" />
             </div>
             </v-col>
         </v-row> 
         <v-row class="groups-inner">
-            <v-col lg="6">
-            <div style="margin-left:80px" class="main-img" id="groups-img">
+            <v-col lg="4" align="center" id="double-image">
+            <div class="main-img" id="groups-img" >
                 <ImageFrame ttlText='"Klan' filename="klan.jpeg" />
             </div>
             </v-col>
@@ -227,22 +230,31 @@ export default {
 </script>
 
 <style lang="scss">
+@mixin section-groups {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  min-height: 70vh;
+  min-width: unset;
+  margin: 0;
+}
+
+.section-gr {
+  @include section-groups();
+  padding: 100px 10vw 0 10vw;
+  background-color: #eee;
+}
 .groups{
     background-color: #303960;
     color:#eee;
+    padding: 10vw;
 }
 #light{
     background-color: #eee;
     color:#303960
 }
 
-.groups-inner{
-    height: 120vh;
-    margin-left: 8vw;
-}
-#trop{
-    height: 150vh;
-}
+
 h1{
 
     font-size: 28px;
@@ -312,10 +324,11 @@ p{
         }
         box-shadow: 0 8px 0 #637CDF;
     }
+
 }
 
-#button-container{
-    width: 900px;
+#column-buttons{
+
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -332,5 +345,53 @@ p{
     align-items: center;
     height: 100%;
 }
+#double-image{
+    margin-right: 11vw;
+}
+@media screen and (max-width:600px) {
+    #column-buttons{
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0;
+    }
+    .groups{
+        background-color: #303960;
+        color:#eee;
+        height: auto;
+        padding: 10vh 24px 10vh 24px
+    }
+    .section-gr {
+    @include section-groups();
+    padding: 100px 30px 0 30px;
+    background-color: #eee;
+    }
+    h1{
 
+        font-size: 20px;
+    }
+    h2{
+        color:#637CDF;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+        margin-bottom: 3vh;
+    }
+    h5{
+
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        margin-bottom: 2.5vh;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #double-image{
+        margin-top: 100px;
+        margin-right: 0
+    }
+
+}
 </style>

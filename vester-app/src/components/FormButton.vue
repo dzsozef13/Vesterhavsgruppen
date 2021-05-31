@@ -61,5 +61,9 @@ export default {
             color: #303960;
         }
         box-shadow: 0 8px 0 #637CDF;
+        &:hover {
+            box-shadow: 0px 4px 16px rgba($color: #3D414D, $alpha: 0.5);
+            box-shadow: 0 4px 0 #637CDF;
+        }
     }
 }

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Nav from '../views/Nav.vue'
 import Home from '../views/Home.vue'
 import News from '../views/News.vue'
 import About from '../views/About.vue'
@@ -7,6 +8,7 @@ import Gallery from '../views/Gallery.vue'
 import Contact from '../views/Contact.vue'
 import Groups from '../views/Groups.vue'
 import Schedule from '../views/Schedule.vue'
+import Calendar from '../views/Calendar.vue'
 import BecomeScout from '../views/BecomeScout.vue'
 
 Vue.use(VueRouter)
@@ -16,6 +18,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/nav',
+    name: 'Nav',
+    component: Nav
   },
   {
     path: '/news',
@@ -47,6 +54,11 @@ const routes = [
     path: '/schedule',
     name: 'Schedule',
     component: Schedule
+  },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    component: Calendar
   },
   {
     path: '/becomescout',

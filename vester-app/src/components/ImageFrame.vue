@@ -94,14 +94,14 @@ export default {
 
         #tape {
             position: absolute;
-            z-index: 999;
+            z-index: 899;
             margin: -25px 0 0 100px;
             width: 50px;
         }
 
         #leaf01 {
             position: absolute;
-            z-index: 999;
+            z-index: 899;
             margin: -50px 0 0 -40px;
             width: 100px;
         }

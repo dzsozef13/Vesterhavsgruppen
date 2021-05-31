@@ -4,7 +4,7 @@
   <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
       <v-col class="asd" >
-        <Title color="#303960" ttlText="Aktuell"/>
+        <Title color="#303960" ttlText="Aktuel"/>
         <Paragraph color="#303960" prgText="Du kan finde en online tilmeldingeblanket ved at trykke på knappen her Covid virus situation"/>
       </v-col>
       <v-col>
@@ -81,7 +81,7 @@ export default {
 .section-1 {
   @include section();
   background-color: #eee;
-  padding: 10vh 5vw 10vh 5vw;
+  padding: 200px 10vw 200px 10vw;
 }
 
 .asd {

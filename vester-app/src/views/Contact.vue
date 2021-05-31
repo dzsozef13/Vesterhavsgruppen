@@ -11,6 +11,107 @@
         </v-col>
       </v-row>
   </v-container>
+    <v-container fluid class="section-contact dark-blank" style="max-width: unset; margin:0;" id="desktop-car">
+    <v-row id="mainrow" >
+      <v-col lg="12" id="car" >
+                <template >
+                    <v-carousel
+                        cycle
+                        height="700"
+                        hide-delimiter-background
+                        show-arrows-on-hover
+                        class="car-con"
+                        id="anchorA"
+                    >
+                    <template v-slot:prev="{ on, attrs }">
+                    <v-btn
+                        color="success"
+                        v-bind="attrs"
+                        v-on="on"
+                        
+                    >Previous slide</v-btn>
+                    </template>
+                    <template v-slot:next="{ on, attrs }">
+                    <v-btn
+                        color="info"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Next slide</v-btn>
+                    </template>
+                    <v-carousel-item
+                    v-for="(map, i) in maps"
+                    :key="i"
+                    :src="map.src"
+                    height="100%"
+                    >
+                    <v-sheet
+                        :src="map.src"
+                    >
+                        <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                        >
+                        </v-row>
+                    </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
+                </template>
+            </v-col>
+      <v-col>
+      </v-col>
+    </v-row>
+  </v-container>
+   <v-container fluid class="section-contact-mobile dark-blank" style="max-width: unset; margin:0;" id="mobile-car" >
+    <v-row id="mainrow" >
+      <v-col lg="12" id="car-col" >
+                <template >
+                    <v-carousel
+                        cycle
+                        height="200"
+                        hide-delimiter-background
+                        show-arrows-on-hover
+                        class="car-con"
+                        id="anchorA"
+                    >
+                    <template v-slot:prev="{ on, attrs }">
+                    <v-btn
+                        color="success"
+                        v-bind="attrs"
+                        v-on="on"
+                        
+                    >Previous slide</v-btn>
+                    </template>
+                    <template v-slot:next="{ on, attrs }">
+                    <v-btn
+                        color="info"
+                        v-bind="attrs"
+                        v-on="on"
+                    >Next slide</v-btn>
+                    </template>
+                    <v-carousel-item
+                    v-for="(map, i) in maps"
+                    :key="i"
+                    :src="map.src"
+                    height="100%"
+                    >
+                    <v-sheet
+                        :src="map.src"
+                    >
+                        <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                        >
+                        </v-row>
+                    </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
+                </template>
+            </v-col>
+
+    </v-row>
+  </v-container>
 
   </div>
 </template>
@@ -50,6 +151,14 @@ export default {
           mail: 'gruppeleder@vesterhavsgruppen.dk',
           tlf: '40 29 26 71'
         },
+      ],
+      maps: [
+        {
+          src: require('../assets/hytter.png')
+        },
+        {
+          src: require('../assets/hytte2.png')
+        },
       ]
     }
 
@@ -65,7 +174,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   min-height: 70vh;
-  padding: 10vh 5vw 5vh 10vw;
+  padding: 5vh 5vw 5vh 10vw;
   margin: 0;
 }
 
@@ -74,13 +183,41 @@ export default {
   background-color: #eee;
   color: rgb(35, 33, 56);
 }
+@mixin section-con-mobile {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 35vh;
+  padding: 0vh 5vw 5vh 5vw;
+  margin: 0;
+}
 
+.section-contact-mobile {
+  @include section-con-mobile();
+  background-color: #eee;
+  color: rgb(35, 33, 56);
+}
+#car-col{
+    padding:0;
+    margin-bottom: 10vh;
+    width: 100vw;
+
+}
 .workers{
   display: flex;
   flex-direction: row;
 }
+#mainrow{
+  display: flex;
+  align-items: center;
+
+}
 #map{
   height: 100vh;
+}
+#mobile-car{
+  display: none;
 }
 #esbjerg{
   height: 100%;
@@ -114,6 +251,9 @@ export default {
     font-size: 1.3vw;
     margin-top: 3vh;
   }
+  .dark-blank{
+    background-color: #303960;
+  }
 
   @media screen and (max-width:600px) {
     .section-contact {
@@ -123,6 +263,17 @@ export default {
     display: flex;
     flex-direction: column;
     padding: 0;
+  }
+  #mobile-car{
+    display: flex;
+  
+  }
+  #desktop-car{
+    display: none;
+  }
+  #car-col{
+    margin: 0;
+
   }
   }
 </style>

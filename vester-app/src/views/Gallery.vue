@@ -64,19 +64,17 @@
                         id="anchorA"
                     >
                     <template v-slot:prev="{ on, attrs }">
-                    <v-btn
-                        color="success"
+                    <v-btn class="button-design"
                         v-bind="attrs"
                         v-on="on"
                         
-                    >Previous slide</v-btn>
+                    ><h4>Tillbage</h4></v-btn>
                     </template>
                     <template v-slot:next="{ on, attrs }">
-                    <v-btn
-                        color="info"
+                    <v-btn class="button-design"
                         v-bind="attrs"
                         v-on="on"
-                    >Next slide</v-btn>
+                    ><h4>Folge</h4></v-btn>
                     </template>
                     <v-carousel-item
                     v-for="(korpslejr, i) in korpslejrs"
@@ -112,18 +110,18 @@
                         id="anchorB"
                     >
                     <template v-slot:prev="{ on, attrs }">
-                    <v-btn
+                    <v-btn class="button-design"
                         color="success"
                         v-bind="attrs"
                         v-on="on"
-                    >Previous slide</v-btn>
+                    ><h4>Tillbage</h4></v-btn>
                     </template>
                     <template v-slot:next="{ on, attrs }">
-                    <v-btn
+                    <v-btn class="button-design"
                         color="info"
                         v-bind="attrs"
                         v-on="on"
-                    >Next slide</v-btn>
+                    ><h4>Folge</h4></v-btn>
                     </template>
                     <v-carousel-item
                     v-for="(gruppetur, i) in gruppeturs"
@@ -159,18 +157,16 @@
                         id="anchorC"
                     >
                     <template v-slot:prev="{ on, attrs }">
-                    <v-btn
-                        color="success"
+                    <v-btn class="button-design"
                         v-bind="attrs"
                         v-on="on"
-                    >Previous slide</v-btn>
+                    ><h4>Tillbage</h4></v-btn>
                     </template>
                     <template v-slot:next="{ on, attrs }">
-                    <v-btn
-                        color="info"
+                    <v-btn class="button-design"
                         v-bind="attrs"
                         v-on="on"
-                    >Next slide</v-btn>
+                    ><h4>Folge</h4></v-btn>
                     </template>
                     <v-carousel-item
                     v-for="(junior, i) in juniors"
@@ -206,18 +202,18 @@
                         id="anchorD"
                     >
                     <template v-slot:prev="{ on, attrs }">
-                    <v-btn
+                    <v-btn class="button-design"
                         color="success"
                         v-bind="attrs"
                         v-on="on"
-                    >Previous slide</v-btn>
+                    ><h4>Tillbage</h4></v-btn>
                     </template>
                     <template v-slot:next="{ on, attrs }">
-                    <v-btn
+                    <v-btn class="button-design"
                         color="info"
                         v-bind="attrs"
                         v-on="on"
-                    >Next slide</v-btn>
+                    ><h4>Folge</h4></v-btn>
                     </template>
                     <v-carousel-item
                     v-for="(trop, i) in trops"
@@ -620,6 +616,43 @@ export default {
   color: rgb(35, 33, 56);
   
 }
+
+.button-design {
+    // body
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        width: max-content;
+        height: 40px;
+        margin: 0;
+        // style
+        text-align: center;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        background: white;
+        //border
+        border-style: solid;
+        border-width: 4px;
+        border-color: #303960;
+        border-radius: 0;
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0;
+            padding: 0 8px 0 8px;
+            color: #303960;
+        }
+        box-shadow: 0 4px 0 #637CDF;
+        &:hover {
+            box-shadow: 0px 4px 16px rgba($color: #3D414D, $alpha: 0.5);
+            box-shadow: 0 2px 0 #637CDF;
+        }
+}
+
 .gal-container{
     padding: 70px 10vw 0 10vw;
 

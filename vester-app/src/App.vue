@@ -48,7 +48,7 @@
         </v-col>
         <v-col lg="7" class="column-footer">
           <div id="sponsor">
-            <v-img id="sponsor-logo" :src="require('../src/assets/ok-logo.jpg')"></v-img>
+            <v-img id="sponsor-logo" :src="require('../src/assets/ok-logoo.svg')"></v-img>
             <h1 id="pad">Our sponsors</h1>
           </div>
           <p>Hver gang nogen bestiller et OK-kort gennem os og hver gang man tanker benzin eller diesel på et kort, der er tilknyttet vores aftale.

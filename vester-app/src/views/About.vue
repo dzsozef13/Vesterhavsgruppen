@@ -170,15 +170,13 @@ export default {
     padding: 10vh 5vw 10vh 5vw;
   }
   #goals-title{
-    margin-bottom: 4vh;
-    letter-spacing: 0.2vw;
+
     font-size: 25px;
   }
   .goal{
-    color: #303960;
+
     font-size: 16px;
-    margin-top: 2vh;
-    text-align: center;
+
   }
 
   #flex{

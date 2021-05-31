@@ -1,29 +1,29 @@
 <template>
   <div class="becomescout">
-        <v-container fluid class="section-1" style="max-width: unset; margin:0; padding-bottom:100px" >
-            <v-row id="mainrow" >
-            <v-col class="asd" lg="6" >
+        <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
+            <v-row >
+            <v-col lg="6" sm="12" style="max-width: unset; margin:0;">
                 <Title color="#303960" ttlText="Hvis du vil være spejder i Vesterhavsgruppen, kan du"/>
                 <p>
                     -Kontakte en af vores gruppeledere, Helén eller Steffen på telefon: 21 67 73 57 / 40 29 26 71eller på mail: kontakt@vesterhavsgruppen.dk <br><br>
                     -Besøge os på Bakkevej 14 når den afdeling, der passer til din alder,<br> holder møde.
                 </p>
             </v-col>
-            <v-col lg="6" id="right-column">
+            <v-col lg="6" sm="12" style="max-width: unset; margin:0;" >
                 <FormButton btnText="Indmeldelse I Vesterhavsgruppen" />
 
             </v-col>
             </v-row>
         </v-container>
 
-          <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark">
+          <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;">
             <v-row sm="12">
-            <v-col lg="6" sm="12" id="about">
+            <v-col lg="6" sm="12" >
                 <Title color="#eee" ttlText="Spejderen får den første mødedag udleveret 'Velkommen til DDS' pjecen samt et indmeldelseskort."/>
                 <Paragraph color="#eee" prgText="Når nye spejdere starter i gruppen får de en lille prøvetid på optil 3 uger, hvorefter spejderen skal indmeldes i gruppen, indmeldelses-blanketten skal afleveres til spejderlederen.
 Ved indmeldelse får den nye spejder udleveret en T-shirt med gruppens logo, rabatkort til spejder sport, tørklæde i gruppens farver og en arbejdsstofbog. Når de får deres 1. uniform udleveres divisionsmærke, Vesterhavsgruppen mærke.Arbejdsstof-bogen som er en praktisk bog om udstyr, uniformer, knob og besnørringer, grundregler og værdier, pakkeliste til diverse tur-typer m.m."/>
             </v-col>
-            <v-col lg="6" id="about">
+            <v-col lg="6" >
                 <div class="main-img">
                 <v-img :src="require('@/assets/il_home.svg')"></v-img>
                 </div>
@@ -31,7 +31,7 @@ Ved indmeldelse får den nye spejder udleveret en T-shirt med gruppens logo, rab
             </v-row>
         </v-container>
 
-              <v-container fluid class="section-3" style="max-width: unset; margin:0;" id="nogle">
+              <v-container fluid class="section-1" style="max-width: unset; margin:0;" id="nogle">
                 <v-row lg="12" sm="12">
                 <v-col lg="12" sm="12" id="about2">
                     <h1 id="betaling-title">Betaling - Gruppen har en valgt kasserer og kontingent o.l. betales via giro eller bank.</h1>
@@ -65,15 +65,21 @@ export default {
 </script>
 
 <style lang="scss">
-#right-column{
-    padding-left: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
+@mixin section {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 10vh 5vw 5vh 10vw;
+  margin: 0;
 }
+
+.section-1 {
+  @include section();
+  background-color: #eee;
+  color: rgb(35, 33, 56);
+}
+
 #about{
   display: flex;
   flex-direction: column;
@@ -90,31 +96,42 @@ export default {
   display: flex;
   align-content: flex-end;
 }
-#about2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .dark {
   background: url('../assets/Artboard1.png');
   background-size: contain ;
 }
 #nogle{
-  height: 60vh;
+  height: auto;
   color: #303960;
   background-color: #eee;
   
 }
+
 #betaling-title{
   margin-bottom: 4vh;
   letter-spacing: 0.2vw;
-  font-size: 3vw;
+  font-size: 45px;
   text-align: center;
 }
-.goals{
+.goal{
   color: #303960;
-  font-size: 1.5vw;
+  font-size: 25px;
   margin-top: 2vh;
+  text-align: center;
+}
+ @media screen and (max-width:600px) {
+  #betaling-title{
+    margin-bottom: 4vh;
+    letter-spacing: 0.2vw;
+    font-size: 25px;
+  }
+  .goal{
+    color: #303960;
+    font-size: 16px;
+    margin-top: 2vh;
+    text-align: center;
+  }
+
 }
 </style>

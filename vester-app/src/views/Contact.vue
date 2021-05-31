@@ -188,8 +188,8 @@ export default {
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  min-height: 35vh;
-  padding: 0vh 5vw 5vh 5vw;
+  min-height: 40vh;
+  padding: 0vh 5vw 0vh 5vw;
   margin: 0;
 }
 

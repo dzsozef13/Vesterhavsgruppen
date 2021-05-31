@@ -157,5 +157,6 @@ export default {
         background: url('../assets/Artboard1.png');
         background-size: contain ;
         }
+       
 
 </style>

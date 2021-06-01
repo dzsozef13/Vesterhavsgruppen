@@ -63,19 +63,7 @@
                         class="car"
                         id="anchorA"
                     >
-                    <template v-slot:prev="{ on, attrs }">
-                    <v-btn class="button-design"
-                        v-bind="attrs"
-                        v-on="on"
-                        
-                    ><h4>Tillbage</h4></v-btn>
-                    </template>
-                    <template v-slot:next="{ on, attrs }">
-                    <v-btn class="button-design"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Folge</h4></v-btn>
-                    </template>
+                    
                     <v-carousel-item
                     v-for="(korpslejr, i) in korpslejrs"
                     :key="i"
@@ -109,20 +97,7 @@
                         class="car"
                         id="anchorB"
                     >
-                    <template v-slot:prev="{ on, attrs }">
-                    <v-btn class="button-design"
-                        color="success"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Tillbage</h4></v-btn>
-                    </template>
-                    <template v-slot:next="{ on, attrs }">
-                    <v-btn class="button-design"
-                        color="info"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Folge</h4></v-btn>
-                    </template>
+
                     <v-carousel-item
                     v-for="(gruppetur, i) in gruppeturs"
                     :key="i"
@@ -156,18 +131,6 @@
                         class="car"
                         id="anchorC"
                     >
-                    <template v-slot:prev="{ on, attrs }">
-                    <v-btn class="button-design"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Tillbage</h4></v-btn>
-                    </template>
-                    <template v-slot:next="{ on, attrs }">
-                    <v-btn class="button-design"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Folge</h4></v-btn>
-                    </template>
                     <v-carousel-item
                     v-for="(junior, i) in juniors"
                     :key="i"
@@ -201,20 +164,6 @@
                         class="car"
                         id="anchorD"
                     >
-                    <template v-slot:prev="{ on, attrs }">
-                    <v-btn class="button-design"
-                        color="success"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Tillbage</h4></v-btn>
-                    </template>
-                    <template v-slot:next="{ on, attrs }">
-                    <v-btn class="button-design"
-                        color="info"
-                        v-bind="attrs"
-                        v-on="on"
-                    ><h4>Folge</h4></v-btn>
-                    </template>
                     <v-carousel-item
                     v-for="(trop, i) in trops"
                     :key="i"

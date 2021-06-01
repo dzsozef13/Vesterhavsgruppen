@@ -3,7 +3,7 @@
 
         <v-container fluid class="section-become" style="max-width: unset; margin:0;">
             <v-row align="center" sm="12">
-            <v-col lg="6" sm="12" >
+            <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" >
                 <Title color="#303960" ttlText="Hvis du vil være spejder i Vesterhavsgruppen, kan du"/>
                 <p> -Kontakte en af vores gruppeledere, Helén eller Steffen på telefon: 21 67 73 57 / 40 29 26 71 <br><br> eller på mail: kontakt@vesterhavsgruppen.dk 
                     -Besøge os på Bakkevej 14 når den afdeling, der passer til din alder, holder møde.</p>
@@ -25,7 +25,7 @@
 
           <v-container fluid class="section-become dark" style="max-width: unset; margin:0;">
             <v-row  align="center" sm="12">
-            <v-col lg="6" sm="12" >
+            <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <Title color="#eee" ttlText="Spejderen får den første mødedag udleveret 'Velkommen til DDS' pjecen samt et indmeldelseskort."/>
                 <Paragraph color="#eee" prgText="Når nye spejdere starter i gruppen får de en lille prøvetid på optil 3 uger, hvorefter spejderen skal indmeldes i gruppen, indmeldelses-blanketten skal afleveres til spejderlederen.
 Ved indmeldelse får den nye spejder udleveret en T-shirt med gruppens logo, rabatkort til spejder sport, tørklæde i gruppens farver og en arbejdsstofbog. Når de får deres 1. uniform udleveres divisionsmærke, Vesterhavsgruppen mærke. Arbejdsstof-bogen som er en praktisk bog om udstyr, uniformer, knob og besnørringer, grundregler og værdier, pakkeliste til diverse tur-typer m.m."/>
@@ -40,7 +40,7 @@ Ved indmeldelse får den nye spejder udleveret en T-shirt med gruppens logo, rab
 
               <v-container fluid class="section-become" style="max-width: unset; margin:0;" id="nogle">
                 <v-row lg="12" sm="12" align="center">
-                <v-col lg="12" sm="12" align="center" id="about2">
+                <v-col lg="12" sm="12" align="center" id="about2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h1 id="betaling-title">Betaling - Gruppen har en valgt kasserer og kontingent o.l. betales via giro eller bank.</h1>
                     <p class="goals"> - Indmeldelsesgebyret dækker bog, T-shirt og tørklæde</p>
                     <p class="goals"> - Kontingent betales halv-årlig i januar og august </p>

@@ -3,7 +3,7 @@
 
   <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" align="center">
-      <v-col lg="6" sm="12">
+      <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <Title color="#303960" ttlText="Nyheder"/>
         <Paragraph color="#303960" prgText="On this version of the page you can find main news, upcoming events and schedules for members of Vesterhavsgruppen!"/>
         <ButtonBlue btnText="Kalendar" route="/calendar"/>

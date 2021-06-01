@@ -1,6 +1,6 @@
 <template>
 <div>
-    <v-container  v-on:mousemove="parallax()" id="frame" class="desktop">
+    <v-container  v-on:mousemove="parallax" id="frame" class="desktop">
         <div id="img-asd" >
             <v-img style="opacity: 0.9;" contain :src="require(`@/assets/${filename}`)"/>
         </div>
@@ -34,7 +34,8 @@ export default {
         return{
         x:0,
         y:0,
-        speed: 0
+        speed: 0,
+
         }
     },
     methods: {

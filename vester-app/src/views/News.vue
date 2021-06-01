@@ -2,16 +2,14 @@
 <div id="news" >
 
   <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
-    <v-row id="mainrow" >
-      <v-col lg="8" sm="12">
-        <Title color="#303960" ttlText="Aktuel"/>
-        <Paragraph color="#303960" prgText="Du kan finde en online tilmeldingeblanket ved at trykke på knappen her Covid virus situation"/>
+    <v-row id="mainrow" align="center">
+      <v-col lg="6" sm="12">
+        <Title color="#303960" ttlText="Nyheder"/>
+        <Paragraph color="#303960" prgText="On this version of the page you can find main news, upcoming events and schedules for members of Vesterhavsgruppen!"/>
         <ButtonBlue btnText="Kalendar" route="/calendar"/>
       </v-col>
-      <v-col lg="4" sm="12">
-        <div id="main-img">
-          <v-img :src="require('@/assets/illustration02.png')"></v-img>
-        </div>
+      <v-col lg="6" sm="12">
+          <ImageFrame ttlText='"News' filename="news.jpg"/>
       </v-col>
     </v-row>
   </v-container>
@@ -28,7 +26,7 @@
         </v-container>
       </v-col>
       <v-col lg="6" sm="12">
-        <v-container class="sticky-note">
+        <v-container class="sticky-note" id="center">
           <h1>Mødetid for Vesterhavsgruppens afdelinger:</h1>
           <h4>(vi mødes på Bakkevej 14, 6700 Esbjerg)</h4>
 
@@ -61,6 +59,7 @@
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
 import ButtonBlue from '@/components/ButtonBlue.vue'
+import ImageFrame from '@/components/ImageFrame.vue'
 
 
 
@@ -70,7 +69,8 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
-    ButtonBlue
+    ButtonBlue,
+    ImageFrame
   }
 }
 </script>
@@ -107,9 +107,12 @@ export default {
   max-width: 250px;
   margin: auto;
 }
-
+#center{
+  text-align: center;
+}
 .light {
   background-color: #eee;
+  
 }
 
 .dark {

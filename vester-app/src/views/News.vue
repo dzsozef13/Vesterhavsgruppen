@@ -1,18 +1,22 @@
 <template>
 <div id="news" >
 
-  <v-container fluid class="section-1" style="max-width: unset; margin:0;" >
+  <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
     <v-row id="mainrow" >
-      <v-col class="asd" >
+      <v-col lg="8" sm="12">
         <Title color="#303960" ttlText="Aktuel"/>
         <Paragraph color="#303960" prgText="Du kan finde en online tilmeldingeblanket ved at trykke på knappen her Covid virus situation"/>
+        <ButtonBlue btnText="Kalendar" route="/calendar"/>
       </v-col>
-      <v-col>
+      <v-col lg="4" sm="12">
+        <div id="main-img">
+          <v-img :src="require('@/assets/illustration02.png')"></v-img>
+        </div>
       </v-col>
     </v-row>
   </v-container>
 
-  <v-container fluid class="section-1 dark" style="max-width: unset; margin:0;" id="dark">
+  <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
     <v-row id="row-news">
       <v-col lg="6" sm="12">
         <v-container class="sticky-note">
@@ -56,6 +60,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
+import ButtonBlue from '@/components/ButtonBlue.vue'
+
 
 
 export default {
@@ -64,6 +70,7 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
+    ButtonBlue
   }
 }
 </script>
@@ -72,15 +79,20 @@ export default {
 
 @mixin section {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   min-height: 70vh;
+  min-width: unset;
   margin: 0;
 }
 
 .section-1 {
   @include section();
-  background-color: #eee;
+  padding: 70px 10vw 100px 10vw
+}
+
+.section-2 {
+  @include section();
   padding: 200px 10vw 200px 10vw;
 }
 
@@ -91,15 +103,21 @@ export default {
   height: max-content;
 }
 
-.main-img {
-  max-width: 300px;
-  display: flex;
-  align-content: flex-end;
+#main-img {
+  max-width: 250px;
+  margin: auto;
 }
+
+.light {
+  background-color: #eee;
+}
+
 .dark {
+  background-color: #303960;
   background: url('../assets/Artboard1.png');
   background-size: contain ;
 }
+
 #mainrow{
   display: flex;
   align-items: center;
@@ -110,12 +128,6 @@ export default {
   flex-direction: column;
   text-align: left;
   justify-content: center;
-}
-
-#dark{
-  background-color: #303960 ;
-  color: #eee;
-  height: auto;
 }
 
 #row-news{

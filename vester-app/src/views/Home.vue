@@ -11,21 +11,18 @@
       </v-col>
       <v-col lg="4" sm="12">
         <div id="main-img">
-          <v-img :src="require('@/assets/il_home.svg')"></v-img>
+          <v-img :src="require('@/assets/illustration01.png')"></v-img>
         </div>
       </v-col>
     </v-row>
     
   </v-container>
 
-  <v-container fluid style="max-width: unset; margin:0; padding:0;" id="video">
+  <v-container fluid style="max-width: unset; margin:0; padding:0;">
     <v-row>
-      <v-col lg="12" style="padding:0;">
-        <v-img :src="require('../assets/Thumb.jpg')" id="video">
-        <div id="gradient-container">
-          <div id="gradient"></div>
-        </div>
-        </v-img>
+      <v-col lg="12" id="video" style="padding:0;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Sg_OAMB6NY" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe>
+          <!-- <div id="gradient"></div> -->
       </v-col>
     </v-row>
   </v-container>
@@ -119,7 +116,7 @@ export default {
 
 .section-1 {
   @include section();
-  padding: 70px 10vw 0 10vw
+  padding: 70px 10vw 100px 10vw
 }
 
 .section-2 {
@@ -138,6 +135,7 @@ export default {
 
 #main-img {
   max-width: 300px;
+  margin: auto;
 }
 
 #video {
@@ -171,16 +169,11 @@ export default {
   margin-top: 0px;
 }
 
-#gradient-container {
-  display: flex;
-  align-items:flex-end;
-  height: 124vh;
-  width: 110vw;
-}
-
 #gradient {
-  height: 80vh;
-  width: 110vw;
+  display: flex;
+  margin-top: -200px;
+  height: 400px;
+  width: 100vw;
   z-index: 111;
   background: rgb(48,57,96);
   background: linear-gradient(0deg, rgba(48,57,96,1) 0%, rgba(48,57,96,0) 100%);

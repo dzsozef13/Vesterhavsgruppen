@@ -5,9 +5,13 @@
     
     <v-row align="center">
       <v-col lg="6" sm="12">
+        <div data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
         <Title color="#303960" ttlText="Velkommen"/>
         <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
         <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
+        </div>
       </v-col>
       <v-col lg="6" sm="12">
         <div id="main-img">
@@ -31,7 +35,10 @@
 
   <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
     <v-row>
-      <v-col lg="8" sm="12">
+      <v-col lg="8" sm="12" data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Om Gruppen" route="/about"/>
@@ -47,15 +54,15 @@
   <v-container fluid style="max-width: unset; margin:0;" id="badges">
     <v-row>
 
-          <v-col lg="4" md="6" sm="12" align="center"> 
+          <v-col lg="4" md="6" sm="12" align="center" data-aos="slide-down"> 
             <v-img class="badge-svg" :src="require('../assets/badge-fire.svg')"></v-img>
             <p class="badge-text">Adventure</p>
           </v-col>
-          <v-col lg="4" md="6" sm="12" align="center"> 
+          <v-col lg="4" md="6" sm="12" align="center" data-aos="slide-down"> 
             <v-img class="badge-svg" :src="require('../assets/badge-forest.svg')"></v-img> 
             <p class="badge-text">Nature</p>
             </v-col>
-          <v-col lg="4" md="12" sm="12" align="center"> 
+          <v-col lg="4" md="12" sm="12" align="center" data-aos="slide-down" data-aos-duration="1000" data-aos-easing="ease-in-out"> 
             <v-img class="badge-svg" :src="require('../assets/badge-hands.svg')" >
             </v-img>
             <p class="badge-text">Friendship</p>
@@ -66,7 +73,10 @@
 
   <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
     <v-row >
-      <v-col lg="8" sm="12" align="left">
+      <v-col lg="8" sm="12" align="left" data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Afdelinger" route="/groups"/>

@@ -83,6 +83,7 @@ export default {
       }
     }
   },
+  
   components: {
     BurgerButton
   },
@@ -103,7 +104,8 @@ export default {
         this.viewChanger.index = 0;
       }
       
-    }
+    },
+    
   }
 }
 

@@ -48,13 +48,20 @@
               <v-col lg="12" sm="12">
                 <Title color="#303960" ttlText="Vi handler og udvikler spejderne via fokusområderne "/>
               </v-col>
-              <v-col lg="12" sm="12" >
+              <v-col lg="6" sm="12" >
                 <p id="list" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                   - Spejdere mod mobning. 
                   <br>- Spejdere for opmærksomhed på natur og miljø
                   <br>- Spejdere for en sund krop og god mad.
                   <br>- Spejdere for en øget integration i samfundet.
                 </p>
+              </v-col>
+              <v-col lg="6" >
+                <div class="sticky-note">
+                <v-img  class="tape" contain :src="require(`@/assets/tape.svg`)"/>
+
+                </div>
+
               </v-col>
             </v-row>
         </v-container>
@@ -76,7 +83,7 @@
           <v-row align="center">
             <v-col lg="5" sm="12" align="center">
               <div class="main-img" id="desktop-padding">
-              <ImageFrame ttlText='"Uniforms' filename="Tydal.jpg"/>
+              <ImageFrame ttlText='"Uniforms' filename="uniforms.jpg"/>
             </div>
             </v-col>
           </v-row>
@@ -159,7 +166,49 @@ export default {
 #desktop-padding{
   margin-right: 150px;
 }
+.sticky-note {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  height: auto;
+  max-width: 440px;
+  min-width: 250px;
+  padding: 24px;
+  margin-bottom: 50px;
+  background-color: white;
 
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0 16px 0;
+    color: #303960;
+  }
+
+  h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    color: #303960;
+  }
+
+  h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    color: #303960;
+  }
+
+  .tape {
+    position: absolute;
+    z-index: 999;
+    margin: -50px 0 0 120px;
+    width: 100px;
+  }
+}
 
 @media screen and (max-width:600px) {
 

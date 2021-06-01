@@ -67,7 +67,7 @@
         </v-row>
     </v-container>
 
-    <v-container fluid class="groups" >
+    <v-container fluid class="groups dark" >
         
         <v-row class="groups-inner">
             <v-col lg="6" class="group-column"   id="anchor1">
@@ -116,7 +116,7 @@ Minispejderne arbejder i patruljer. Patruljen begynder at klare sig selv på de 
                 </v-col>
         </v-row> 
     </v-container>
-        <v-container fluid class="groups">
+        <v-container fluid class="groups dark">
         <v-row class="groups-inner">
             <v-col lg="6" class="group-column"  id="anchor3">
                 <h1>Junior</h1>
@@ -167,7 +167,7 @@ Patruljerne er sammensat at lederne, og med spejdere som har forskellige kvalifi
             </v-col>
         </v-row> 
     </v-container>
-        <v-container fluid class="groups">
+        <v-container fluid class="groups dark">
         <v-row class="groups-inner">
             <v-col lg="6" class="group-column" id="anchor5">
                 <h1>Klan</h1>
@@ -254,7 +254,10 @@ export default {
     color:#303960
 }
 
-
+.dark {
+  background: url('../assets/Artboard1.png');
+  background-size: contain ;
+}
 h1{
 
     font-size: 28px;

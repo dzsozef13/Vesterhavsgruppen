@@ -26,7 +26,7 @@
         </v-row>
       </v-container>
 
-        <v-container fluid class="section-2" style="max-width: unset; margin:0; background-color:#303960;" >
+        <v-container fluid class="section-2 dark" style="max-width: unset; margin:0; background-color:#303960;" >
           <v-row align="center">
             <v-col lg="4" md="6" sm="12" align="center">
               <div class="main-img" >
@@ -59,7 +59,7 @@
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-2" id="flex-exepction" style="max-width: unset; background-color:#303960;">
+        <v-container fluid class="section-2 dark"" id="flex-exepction" style="max-width: unset; background-color:#303960;">
           <v-row >
             <v-col lg="10" sm="12">
               <Title color="#eee" ttlText="Kontingent"/>
@@ -126,6 +126,10 @@ export default {
   display: flex;
   align-content: flex-end;
   max-width: 400px;
+}
+.dark {
+  background: url('../assets/Artboard1.png');
+  background-size: contain ;
 }
 
 #goals-title{

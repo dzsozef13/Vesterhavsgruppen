@@ -22,7 +22,7 @@ export default {
           path: '/',
         },
         {
-          text: 'Garrely',
+          text: 'Gallery',
           path: '/gallery',
         },
         {

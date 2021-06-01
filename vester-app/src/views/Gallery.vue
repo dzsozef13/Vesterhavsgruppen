@@ -48,8 +48,12 @@
                                     </v-container>
             </div>
             </v-col>
-            <v-col lg="7" >
-                <v-img id="main-img" :src="require('@/assets/illustration02.png')"></v-img>
+            <v-col lg="7" id="mobile-pad">
+                <div id="main-img">
+                <v-img class="layer" id="aparat" data-speed="5" :src="require('@/assets/illustration02.png')"></v-img>
+                <v-img class="layer" id="leafy1" data-speed="-2" :src="require('@/assets/leaf01-revert.svg')"></v-img>
+                <v-img class="layer" id="leafy2" data-speed="2" :src="require('@/assets/leaf01.svg')"></v-img>
+                </div>
             </v-col>
             </v-row>
 
@@ -256,7 +260,9 @@ export default {
     return {
 
 
-        
+        x:0,
+        y:0,
+        speed: 0,
             korpslejrs: [
                 {
                     src: require('../assets/2009/DSC03998.jpg')
@@ -551,6 +557,22 @@ export default {
             ],
         }
     },
+    methods: {
+
+        parallax: function(e) {
+            let stuff = document.querySelectorAll('.layer')
+            stuff.forEach(layer => {
+                this.speed = layer.getAttribute('data-speed')
+                this.x = (window.innerWidth - e.pageX * this.speed)/100
+                this.y = (window.innerHeight - e.pageY * this.speed)/100
+
+                layer.style.transform = `translateX(${this.x}px) translateY(${this.y}px)`
+            })
+        }
+    },
+    mounted() {
+        document.addEventListener('mousemove', this.parallax);
+    }
 }
 </script>
 
@@ -694,8 +716,29 @@ figure{
     margin-top: 30px;
 }
 #main-img {
-  max-width: 250px;
-  margin: auto;
+    max-width: 250px;
+    margin: auto;
+    z-index: 1;
+}
+#aparat{
+
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  left: 40px;
+}
+#leafy1{
+  position: absolute;
+  z-index: 4;
+  margin: -350px 0 0 120px;
+  max-width: 700px ;
+}
+#leafy2{
+  position: absolute;
+  z-index: 4;
+  margin: -350px 0 0 -120px;
+  max-width: 300px ;
+
 }
 @media screen and (max-width:600px) {
     .gal-container{
@@ -750,6 +793,27 @@ figure{
 
 
 }
+    #mobile-pad{
+        padding-bottom: 100px ;
+    }
+    #leafy1{
+
+    right: 5px;
+    top:900px;
+    margin: 0;
+    max-width: 700px ;
+    z-index: 3;
+    }
+
+    #leafy2{
+
+    left: 50px;
+    top:900px;
+    margin: 0;
+    max-width: 700px ;
+    z-index: 2;
+
+    }
 
 }
 </style>

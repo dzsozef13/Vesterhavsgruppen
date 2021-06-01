@@ -28,6 +28,9 @@
         <!-- <div id="gradient"></div> -->
       </v-col>
     </v-row>
+    <div id="mute-button">
+      <v-btn id="mute-icon" v-on:click="toggleMute()"><v-img :src="require('@/assets/sound_icon.svg')"></v-img></v-btn>
+    </div>
   </v-container>
 
   <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
@@ -123,6 +126,11 @@ export default {
 
                 layer.style.transform = `translateX(${this.x}px) translateY(${this.y}px)`
             })
+        },
+
+        toggleMute: function() {
+          let video = document.getElementById('video')
+          video.muted = !video.muted;
         }
     },
     mounted() {
@@ -167,6 +175,18 @@ export default {
   z-index: 1;
 }
 
+#mute-button {
+  position: absolute;
+  right: 0;
+  margin: -50px 24px auto auto;
+  
+  #mute-icon {
+    background: none;
+    box-shadow: none;
+    z-index: 799;
+  }
+}
+
 #scouts{
 
   z-index: 10;
@@ -192,12 +212,14 @@ export default {
 #video-container {
   display: flex;
   align-content: center;
+  height: max-content;
 
   #video {
     height: auto;
     width: 100%;
   }
 }
+
 .wood{
   height: 100vh ;
   width: 100vw ;
@@ -242,15 +264,10 @@ export default {
     padding-right: 24px;
   }
 
-  #main{
-    display: none;
-  }
   #dark{
     height: max-content;
   }
-  #gradient{
-    display: none;
-  }
+
   #scouts{
 
   z-index: 10;

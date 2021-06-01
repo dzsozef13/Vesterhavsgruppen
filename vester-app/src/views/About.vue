@@ -59,7 +59,7 @@
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-2 dark"" id="flex-exepction" style="max-width: unset; background-color:#303960;">
+        <v-container fluid class="section-2 dark" id="flex-exepction" style="max-width: unset; background-color:#303960;">
           <v-row >
             <v-col lg="10" sm="12">
               <Title color="#eee" ttlText="Kontingent"/>

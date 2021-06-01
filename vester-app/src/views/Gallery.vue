@@ -2,8 +2,8 @@
   <div class="gallery">
 
         <v-container fluid class="section-gallery" style="max-width: unset; margin:0;" >
-            <v-row >
-            <v-col lg="12" sm="12" class="gal-container">
+            <v-row align="center">
+            <v-col lg="5" sm="12" class="gal-container">
                 <Title color="#303960" ttlText="Gallery"/>
                 <div id="button-gallery">
                                     <v-container id="component" >
@@ -48,7 +48,11 @@
                                     </v-container>
             </div>
             </v-col>
+            <v-col lg="7" >
+                <v-img id="main-img" :src="require('@/assets/illustration02.png')"></v-img>
+            </v-col>
             </v-row>
+
         </v-container>
 
         <v-container fluid class="section-gallery" id="carousels" style="max-width: unset; margin:0;" >
@@ -689,7 +693,10 @@ figure{
     flex-wrap: wrap;
     margin-top: 30px;
 }
-
+#main-img {
+  max-width: 250px;
+  margin: auto;
+}
 @media screen and (max-width:600px) {
     .gal-container{
         padding: 10vh 24px 10vh 24px

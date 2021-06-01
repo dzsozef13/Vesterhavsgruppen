@@ -1,17 +1,19 @@
 <template>
 <div id="home" >
 
-  <v-container fluid class="section-1 light" style="max-width: unset; margin:0;" >
+  <v-container v-on:mousemove="parallax" fluid class="section-1 light" style="max-width: unset; margin:0;" >
     
-    <v-row>
-      <v-col lg="8" sm="12">
+    <v-row align="center">
+      <v-col lg="6" sm="12">
         <Title color="#303960" ttlText="Velkommen"/>
         <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
         <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
       </v-col>
-      <v-col lg="4" sm="12">
+      <v-col lg="6" sm="12">
         <div id="main-img">
-          <v-img :src="require('@/assets/illustration01.png')"></v-img>
+          <v-img class="layer" id="scouts" data-speed="-2" :src="require('@/assets/illustration01.png')"></v-img>
+          <v-img class="layer" id="cloud1" data-speed="5" :src="require('@/assets/cloud.svg')"></v-img>
+          <v-img class="layer" id="cloud2" data-speed="2" :src="require('@/assets/cloud.svg')"></v-img>
         </div>
       </v-col>
     </v-row>
@@ -99,7 +101,32 @@ export default {
     ButtonBlue,
     ButtonWhite,
     ImageFrame
-  }
+  },
+  data() {
+
+        return{
+        x:0,
+        y:0,
+        speed: 0,
+
+        }
+    },
+    methods: {
+
+        parallax: function(e) {
+            let stuff = document.querySelectorAll('.layer')
+            stuff.forEach(layer => {
+                this.speed = layer.getAttribute('data-speed')
+                this.x = (window.innerWidth - e.pageX * this.speed)/100
+                this.y = (window.innerHeight - e.pageY * this.speed)/100
+
+                layer.style.transform = `translateX(${this.x}px) translateY(${this.y}px)`
+            })
+        }
+    },
+    mounted() {
+        document.addEventListener('mousemove', this.parallax);
+    }
 }
 </script>
 
@@ -136,6 +163,30 @@ export default {
 #main-img {
   max-width: 300px;
   margin: auto;
+  z-index: 1;
+  
+
+}
+#scouts{
+
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  left: -200px;
+}
+#cloud1{
+  position: absolute;
+  z-index: 5;
+  margin: -200px 0 0 -100px;
+  max-width: 400px ;
+
+}
+#cloud2{
+  position: absolute;
+  z-index: 4;
+  margin: -350px 0 0 30px;
+  max-width: 450px ;
+
 }
 
 #video {
@@ -195,5 +246,25 @@ export default {
   #gradient{
     display: none;
   }
+  #scouts{
+
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  left: 80px;
+}
+#cloud1{
+  position: absolute;
+  z-index: 5;
+  left: 100px;
+  max-width: 400px ;
+
+}
+#cloud2{
+  position: absolute;
+  z-index: 4;
+  max-width: 450px ;
+
+}
 }
 </style>

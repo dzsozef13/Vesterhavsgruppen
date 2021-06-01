@@ -144,7 +144,7 @@ export default {
   height: auto;
   max-width: 440px;
   min-width: 250px;
-  padding: 16px;
+  padding: 24px;
   margin-bottom: 50px;
   background-color: white;
 
@@ -175,7 +175,7 @@ export default {
   .tape {
     position: absolute;
     z-index: 999;
-    margin: -35px 0 0 120px;
+    margin: -50px 0 0 120px;
     width: 100px;
   }
 }

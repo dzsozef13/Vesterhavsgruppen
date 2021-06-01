@@ -22,9 +22,10 @@
 
   <v-container fluid style="max-width: unset; margin:0; padding:0;">
     <v-row>
-      <v-col lg="12" id="video" style="padding:0;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Sg_OAMB6NY" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe>
-          <!-- <div id="gradient"></div> -->
+      <v-col lg="12" id="video-container" style="padding:0;">
+        <video id="video" src="@/assets/intro_video.mp4" playsinline loop muted autoplay></video>
+        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Sg_OAMB6NY" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe> -->
+        <!-- <div id="gradient"></div> -->
       </v-col>
     </v-row>
   </v-container>
@@ -164,9 +165,8 @@ export default {
   max-width: 300px;
   margin: auto;
   z-index: 1;
-  
-
 }
+
 #scouts{
 
   z-index: 10;
@@ -189,9 +189,14 @@ export default {
 
 }
 
-#video {
-  min-height: 100vh;
-  width: auto;
+#video-container {
+  display: flex;
+  align-content: center;
+
+  #video {
+    height: auto;
+    width: 100%;
+  }
 }
 .wood{
   height: 100vh ;
@@ -253,6 +258,7 @@ export default {
   position: relative;
   left: 80px;
 }
+
 #cloud1{
   position: absolute;
   z-index: 5;

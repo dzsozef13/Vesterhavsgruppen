@@ -2,13 +2,9 @@
 <div class="group">
     <v-container fluid class="section-gr" style="max-width: unset; margin:0;" >
         <v-row align="center">
-            <v-row >
-                <v-col lg="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
-                </v-col>
-                
-            </v-row>
-        <v-col lg="9" xl="8" sm="12" id="column-buttons" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <v-col lg="9" xl="9" sm="12" id="column-buttons" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <Title color="#303960" ttlText="Afdelinger i Vesterhavsgruppen"/>
+             <div id="button-gallery">
                     <v-container id="component" >
                         <v-btn id="square-button" 
                         dark
@@ -63,6 +59,7 @@
                             <h4> Klan (efter 9. klasse) </h4>
                         </v-btn>
                     </v-container>
+                    </div>
         </v-col>
         </v-row>
     </v-container>
@@ -287,7 +284,14 @@ p{
     align-items: flex-start;
     justify-content: center;
 }
+#button-gallery{
 
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
 #component {
     display: flex;
     flex-direction: column;

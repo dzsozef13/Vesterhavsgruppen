@@ -1,11 +1,13 @@
 <template>
 
     <a href="https://medlem.dds.dk/member/signup/5412" target="_blank" style="text-decoration: none;">
-        <v-container id="component">
+        <v-container id="component" style="margin:0;">
             <v-btn id="square-button"
             dark
             depressed
             tile
+            
+            
             >
                 <h4>{{ btnText }}</h4>
                 
@@ -29,7 +31,7 @@ export default {
     justify-content: center; 
     align-items: center;
     width: max-content;
-    margin: 0 0 64px 0;
+    margin: 0;
     padding: 0;
 
     #square-button {

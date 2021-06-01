@@ -30,7 +30,7 @@
             depressed
             tile
             >
-                <h4>icon</h4>
+                <v-icon style="font-size: 1.5em; color: #637CDF;">fas fa-user-friends</v-icon>
         </v-btn>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>
@@ -43,7 +43,7 @@
         <v-col lg="5" sm="12" class="column-footer" id="first-column">
               <h1>Follow us!</h1>
               <div id="fb">
-              <v-icon style="font-size: 3em; color: Tomato;">fab fa-facebook</v-icon>
+              <v-icon style="font-size: 3em; color: #637CDF;">fab fa-facebook</v-icon>
               <p id="pad">FACEBOOK</p>
               </div>
 

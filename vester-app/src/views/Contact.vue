@@ -1,12 +1,12 @@
 <template class="contact">
   <div>
   <v-container fluid class="section-contact"  style="max-width: unset; margin:0;" >
-      <v-row >
+      <v-row align="center">
         <v-col lg="12" >
           <Title color="#303960" ttlText="Contact"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>
-        <v-col class="workers" lg="12">
+        <v-col class="workers" lg="12" >
           <Leaders v-for="teacher in teachers" :teacher="teacher" :key="teacher.mail"/>
         </v-col>
       </v-row>

@@ -11,7 +11,33 @@
         </v-col>
       </v-row>
   </v-container>
-    <v-container fluid class="section-contact dark-blank" style="max-width: unset; margin:0;" id="desktop-car">
+  
+<v-container fluid class="section-gallery" id="carousels" style="max-width: unset; margin:0;" >
+  <v-row >
+    <v-col lg="12" id="car-col" >
+      <template >
+        <v-carousel
+          cycle
+          height="800"
+          hide-delimiter-background
+          show-arrows-on-hover
+          class="car"
+          id="anchorA"
+          >     
+          <v-carousel-item>
+            asd
+          </v-carousel-item>
+          <v-carousel-item>
+            qwe
+          </v-carousel-item>
+        </v-carousel>
+      </template>
+    </v-col>
+  </v-row>
+</v-container>
+
+
+  <!-- <v-container fluid class="section-contact dark-blank" style="max-width: unset; margin:0;" id="desktop-car">
     <v-row id="mainrow" >
       <v-col lg="12" id="car" >
                 <template >
@@ -81,7 +107,9 @@
             </v-col>
 
     </v-row>
-  </v-container>
+  </v-container> -->
+
+
 
   </div>
 </template>

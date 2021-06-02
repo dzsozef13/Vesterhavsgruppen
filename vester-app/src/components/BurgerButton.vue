@@ -49,7 +49,7 @@ export default {
         text-transform: none;
         text-decoration: none;
         font-family: "Lato";
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bolder;
         letter-spacing: 0;
         background-color: white;

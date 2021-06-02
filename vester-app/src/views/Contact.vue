@@ -1,5 +1,6 @@
 <template class="contact">
-  <div>
+<div>
+
   <v-container fluid class="section-contact"  style="max-width: unset; margin:0;" >
       <v-row align="center">
         <v-col lg="12" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -12,23 +13,36 @@
       </v-row>
   </v-container>
   
-<v-container fluid class="section-gallery" id="carousels" style="max-width: unset; margin:0;" >
+<v-container fluid style="max-width: unset; margin:0;" >
   <v-row >
     <v-col lg="12" id="car-col" >
       <template >
         <v-carousel
           cycle
-          height="800"
+          height="auto"
           hide-delimiter-background
           show-arrows-on-hover
           class="car"
           id="anchorA"
           >     
           <v-carousel-item>
-            asd
+            <Location
+            name="Vesterhavsgruppens hytter" 
+            description="Gruppen har en mødehytte på Bakkevej 14, på en grund vi deler med Sct. Georgsgilderne, De Grønne Pigespejdere og FDF.
+            I hytten er der et stort fælles møderum, 4 patruljelokaler, et lederrum og et moderne køkken.
+            Der er god plads uden om hytten, så vi kan arbejde med pionerarbejde og båltænding.
+            I hytten er der depot med udstyr så hele gruppen kan tage på teltlejr på en gang." 
+            map="map01.png"
+            image=""/>
           </v-carousel-item>
           <v-carousel-item>
-            qwe
+            <Location
+            name="Kontingent" 
+            description="Vesterhavsgruppen har også en lille hytte i Marbæk Plantage.
+            Trekløverhytten ligger på Spejderøen og der er plads til at der kan overnatte 10 personer i hytten. Hytten indeholder fællesrum, 
+            lederrum, soverum, køkken og toilet og er derfor ideel til patruljeture, weekendture for en lille afdeling eller base for aktiviteter i Marbæk Plantage" 
+            map="map02.png"
+            image=""/>
           </v-carousel-item>
         </v-carousel>
       </template>
@@ -36,88 +50,14 @@
   </v-row>
 </v-container>
 
-
-  <!-- <v-container fluid class="section-contact dark-blank" style="max-width: unset; margin:0;" id="desktop-car">
-    <v-row id="mainrow" >
-      <v-col lg="12" id="car" >
-                <template >
-                    <v-carousel
-                        cycle
-                        height="700"
-                        hide-delimiter-background
-                        show-arrows-on-hover
-                        class="car-con"
-                        id="anchorA"
-                    >
-                    <v-carousel-item
-                    v-for="(map, i) in maps"
-                    :key="i"
-                    :src="map.src"
-                    height="100%"
-                    >
-                    <v-sheet
-                        :src="map.src"
-                    >
-                        <v-row
-                        class="fill-height"
-                        align="center"
-                        justify="center"
-                        >
-                        </v-row>
-                    </v-sheet>
-                    </v-carousel-item>
-                </v-carousel>
-                </template>
-            </v-col>
-      <v-col>
-      </v-col>
-    </v-row>
-  </v-container>
-   <v-container fluid class="section-contact-mobile dark-blank" style="max-width: unset; margin:0;" id="mobile-car" >
-    <v-row id="mainrow" >
-      <v-col lg="12" id="car-col" >
-                <template >
-                    <v-carousel
-                        cycle
-                        height="200"
-                        hide-delimiter-background
-                        show-arrows-on-hover
-                        class="car-con"
-                        id="anchorA"
-                    >
-                    <v-carousel-item
-                    v-for="(map, i) in maps"
-                    :key="i"
-                    :src="map.src"
-                    height="100%"
-                    >
-                    <v-sheet
-                        :src="map.src"
-                    >
-                        <v-row
-                        class="fill-height"
-                        align="center"
-                        justify="center"
-                        >
-                        </v-row>
-                    </v-sheet>
-                    </v-carousel-item>
-                </v-carousel>
-                </template>
-            </v-col>
-
-    </v-row>
-  </v-container> -->
-
-
-
-  </div>
+</div>
 </template>
 
 <script>
 import Title from '@/components/Title.vue'
 import Paragraph from '@/components/Paragraph.vue'
 import Leaders from '@/components/Leaders.vue'
+import Location from '@/components/Location.vue'
 
 
 export default {
@@ -126,7 +66,8 @@ export default {
     // HelloWorld
     Title,
     Paragraph,
-    Leaders
+    Leaders,
+    Location
   },
   data() {
     return {
@@ -159,8 +100,6 @@ export default {
         },
       ]
     }
-
-
   }
 }
 </script>
@@ -196,40 +135,28 @@ export default {
   background-color: #eee;
   color: rgb(35, 33, 56);
 }
-#car-col{
-    padding:0;
-    margin-bottom: 10vh;
-    width: 100vw;
 
-}
 .workers{
   display: flex;
   flex-direction: row;
 }
+
 #mainrow{
   display: flex;
   align-items: center;
+}
 
-}
-#map{
-  height: 100vh;
-}
-#mobile-car{
-  display: none;
-}
-#esbjerg{
-  height: 100%;
-}
 #dark-column{
   background-color: #303960;
   display: flex;
   flex-direction: column;
 }
-#one{
 
+#one{
   width: 100%;
   height: 40vh;
 }
+
 #two{
 
   width: 100%;

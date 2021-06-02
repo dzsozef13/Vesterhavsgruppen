@@ -202,7 +202,7 @@ export default {
   z-index: 10;
   width: 100%;
   position: relative;
-  left: -200px;
+  left: -100px;
 }
 #cloud1{
   position: absolute;

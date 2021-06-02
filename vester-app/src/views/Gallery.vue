@@ -198,7 +198,7 @@
         <v-container fluid class="section-gallery" id="external" style="max-width: unset; margin:0;">
             <v-row align="center">
                 <v-col lg="12" sm="12" align="center"  data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <h1>External websites with pictures from our scouts meetings!</h1>
+                    <h1 style="color:#303960">Eksterne hjemmesider med billeder fra vores spejder møder!</h1>
                 </v-col>
             </v-row>
             <v-row style="margin:0; padding:0" >

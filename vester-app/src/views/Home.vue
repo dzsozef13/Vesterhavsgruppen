@@ -50,7 +50,7 @@
       </v-col>
       <v-col lg="4" sm="12">
         <div>
-          <ImageFrame ttlText='"Community' filename="thumbnail-3.png"/>
+          <ImageFrame ttlText='"Fællesskab' filename="thumbnail-3.png"/>
         </div>
       </v-col>
     </v-row>
@@ -61,16 +61,16 @@
 
           <v-col lg="4" md="6" sm="12" align="center" data-aos="slide-down"> 
             <v-img class="badge-svg" :src="require('../assets/badge-fire.svg')"></v-img>
-            <p class="badge-text">Adventure</p>
+            <p class="badge-text">Eventyr</p>
           </v-col>
           <v-col lg="4" md="6" sm="12" align="center" data-aos="slide-down"> 
             <v-img class="badge-svg" :src="require('../assets/badge-forest.svg')"></v-img> 
-            <p class="badge-text">Nature</p>
+            <p class="badge-text">Natur</p>
             </v-col>
           <v-col lg="4" md="12" sm="12" align="center" data-aos="slide-down" data-aos-duration="1000" data-aos-easing="ease-in-out"> 
             <v-img class="badge-svg" :src="require('../assets/badge-hands.svg')" >
             </v-img>
-            <p class="badge-text">Friendship</p>
+            <p class="badge-text">Venskab</p>
           </v-col>
           
     </v-row>
@@ -88,7 +88,7 @@
       </v-col>
       <v-col lg="4" sm="12">
         <div>
-          <ImageFrame ttlText='"Experience' filename="mikro.jpg"/>
+          <ImageFrame ttlText='"Erfaring' filename="mikro.jpg"/>
         </div>
       </v-col>
     </v-row>

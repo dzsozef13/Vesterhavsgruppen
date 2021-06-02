@@ -18,15 +18,15 @@ export default {
     return {
       routes: [
         {
-          text: 'Home',
+          text: 'Hjem',
           path: '/',
         },
         {
-          text: 'Gallery',
+          text: 'Galleri',
           path: '/gallery',
         },
         {
-          text: 'Contact',
+          text: 'Kontakt',
           path: '/contact',
         }
       ]

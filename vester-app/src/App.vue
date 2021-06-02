@@ -10,9 +10,9 @@
         <v-img width="240px" id="logo" :src="require('./assets/logo.svg')"></v-img>
       </div>
       <div class="hidden-sm-and-down links">
-        <router-link :to= links.route01 >Home</router-link>
-        <router-link :to= links.route02 >Gallery</router-link>
-        <router-link :to= links.route03 >Contacts</router-link>
+        <router-link :to= links.route01 >Hjem</router-link>
+        <router-link :to= links.route02 >Galleri</router-link>
+        <router-link :to= links.route03 >Kontakt</router-link>
 
         <v-btn id="square-button" v-on:click="test()"
             dark
@@ -41,7 +41,7 @@
     <v-container style="max-width: unset; margin:0;" id="footer">
       <v-row id="inner-footer">
         <v-col lg="5" sm="12" class="column-footer" id="first-column">
-              <h1>Follow us!</h1>
+              <h1>Følg os!</h1>
               <div id="fb">
               <v-icon style="font-size: 3em; color: #637CDF;">fab fa-facebook</v-icon>
               <p id="pad">FACEBOOK</p>
@@ -52,7 +52,7 @@
         <v-col lg="7" sm="12" class="column-footer">
           <div id="sponsor">
             <v-img id="sponsor-logo" :src="require('../src/assets/ok-logoo.svg')"></v-img>
-            <h1 id="pad">Our sponsors</h1>
+            <h1 id="pad">Vores sponsorer</h1>
           </div>
           <p>Hver gang nogen bestiller et OK-kort gennem os og hver gang man tanker benzin eller diesel på et kort, der er tilknyttet vores aftale.
             Hvis du er interesseret i at støtte os på denne måde, kan du skrive til inge.thisgaard@mail.dk eller tale med en leder til vores spejdermøder.</p>
@@ -78,7 +78,7 @@ export default {
         route03: "/contact",
       },
       viewChanger: {
-        text: "For Members",
+        text: "For medlemmer",
         index: 0,
       }
     }
@@ -93,14 +93,14 @@ export default {
         console.log("yay");
         this.$router.push("/news");
         this.links.route01 = "/news";
-        this.viewChanger.text = "For Visitors";
+        this.viewChanger.text = "For besøgende";
         this.viewChanger.index = 1;
       }
       else {
         console.log("shehs");
         this.$router.push("/");
         this.links.route01 = "/";
-        this.viewChanger.text = "For Members";
+        this.viewChanger.text = "For medlemmer";
         this.viewChanger.index = 0;
       }
       

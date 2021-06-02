@@ -5,11 +5,11 @@
     <v-row id="mainrow" align="center">
       <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
         <Title color="#303960" ttlText="Nyheder"/>
-        <Paragraph color="#303960" prgText="On this version of the page you can find main news, upcoming events and schedules for members of Vesterhavsgruppen!"/>
+        <Paragraph color="#303960" prgText="På denne side kan du finde hoved nyheder, kommende arrangementer og kalender for medlemmer af Vesterhavsgruppen!"/>
         <ButtonBlue btnText="Kalendar" route="/schedule"/>
       </v-col>
       <v-col lg="6" sm="12">
-          <ImageFrame ttlText='"News' filename="news.jpg"/>
+          <ImageFrame ttlText='"Nyheder' filename="news.jpg"/>
       </v-col>
     </v-row>
   </v-container>

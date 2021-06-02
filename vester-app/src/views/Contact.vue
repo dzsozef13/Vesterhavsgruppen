@@ -4,7 +4,7 @@
   <v-container fluid class="section-contact"  style="max-width: unset; margin:0;" >
       <v-row align="center">
         <v-col lg="12" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <Title color="#303960" ttlText="Contact"/>
+          <Title color="#303960" ttlText="Kontakt"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>
         <v-col class="workers" lg="12" >

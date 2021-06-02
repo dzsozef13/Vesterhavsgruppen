@@ -9,7 +9,7 @@
           </v-col>
           <v-col lg="6" sm="12" align="center" >
             <div class="main-img">
-              <ImageFrame ttlText='"Friendship' filename="abousus.png"/>
+              <ImageFrame ttlText='"Venskab' filename="abousus.png"/>
             </div>
           </v-col>
         </v-row>
@@ -30,7 +30,7 @@
           <v-row align="center">
             <v-col lg="4" md="6" sm="12" align="center">
               <div class="main-img" >
-              <ImageFrame ttlText='"Experience' filename="Tydal.jpg"/>
+              <ImageFrame ttlText='"Erfaring' filename="Tydal.jpg"/>
             </div>
             </v-col>
             
@@ -85,7 +85,7 @@
           <v-row align="center">
             <v-col lg="5" sm="12" align="center">
               <div class="main-img" id="desktop-padding">
-              <ImageFrame ttlText='"Uniforms' filename="uniforms.jpg"/>
+              <ImageFrame ttlText='"Uniform' filename="uniforms.jpg"/>
             </div>
             </v-col>
           </v-row>

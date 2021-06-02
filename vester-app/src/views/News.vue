@@ -184,6 +184,12 @@ export default {
 }
 
 @media screen and (max-width:600px) {
+
+  .section-1, .section-2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
   #badges{
     flex-direction: column;
     padding: 8vh 0 5vh 0;

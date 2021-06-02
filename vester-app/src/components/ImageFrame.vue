@@ -68,7 +68,7 @@ export default {
         width: 380px;
         top: 50px;
         right: 50px;
-        z-index: 991;
+        z-index: 599;
 
 
         #img-asd {
@@ -78,7 +78,7 @@ export default {
             justify-content: flex-start;
             padding: 2px;
             max-width: 350px;
-            z-index: 992;
+            z-index: 699;
         }
 
         h1 {
@@ -88,27 +88,27 @@ export default {
             color: #637CDF;
             text-align: left;
 
-            z-index: 992;
+            z-index: 699;
 
         }
 
         #tape {
             position: absolute;
-            z-index: 998;
+            z-index: 799;
             margin: -25px 0 0 100px;
             width: 100px;
         }
 
         #leaf01 {
             position: absolute;
-            z-index: 997;
+            z-index: 799;
             margin: -110px 0 0 -110px;
             width: 150px;
         }
 
         #leaf02 {
             position: absolute;
-            z-index: 996;
+            z-index: 799;
             margin: 270px 0 0 290px;
             width: 150px;
         }
@@ -172,21 +172,21 @@ export default {
 
         #tape {
             position: absolute;
-            z-index: 899;
+            z-index: 799;
             margin: -325px 0 0 100px;
             width: 50px;
         }
 
         #leaf01 {
             position: absolute;
-            z-index: 899;
+            z-index: 799;
             margin: -350px 0 0 -40px;
             width: 100px;
         }
 
         #leaf02 {
             position: absolute;
-            z-index: 999;
+            z-index: 799;
             margin: -90px 0 0 200px;
             width: 100px;
         }

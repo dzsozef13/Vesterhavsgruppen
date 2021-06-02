@@ -30,7 +30,7 @@
             depressed
             tile
             >
-                <v-icon style="font-size: 1.5em; color: #637CDF;">fas fa-user-friends</v-icon>
+                <v-icon style="font-size: 1.5em; color: #303960;">fas fa-user-friends</v-icon>
         </v-btn>
       <!-- <div>
         <router-link to="/contact">For Members</router-link>

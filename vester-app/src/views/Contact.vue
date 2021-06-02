@@ -2,7 +2,7 @@
   <div>
   <v-container fluid class="section-contact"  style="max-width: unset; margin:0;" >
       <v-row align="center">
-        <v-col lg="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <v-col lg="12" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <Title color="#303960" ttlText="Contact"/>
           <Paragraph color="#303960" prgText="Vesterhavsgruppens ledelse"/>
         </v-col>

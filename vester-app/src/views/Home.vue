@@ -7,7 +7,8 @@
       <v-col lg="6" sm="12">
         <div data-aos="fade-right"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out">
+        data-aos-easing="ease-in-out"
+        data-aos-once="true">
         <Title color="#303960" ttlText="Velkommen"/>
         <Paragraph color="#303960" prgText="DDS Vesterhavsgruppen, Esbjerg er medlem af Det Danske Spejderkorps, også kaldet De Blå Spejdere i daglig tale. Du kan finde en online tilmeldingeblanket ved at trykke på knappen her"/>
         <ButtonBlue btnText="Bliv Spejder" route="/BecomeScout"/>
@@ -42,7 +43,7 @@
       <v-col lg="8" sm="12" data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-once="false">
+        data-aos-once="true">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Om Gruppen" route="/about"/>
@@ -80,7 +81,7 @@
       <v-col lg="8" sm="12" align="left" data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-once="false">
+        data-aos-once="true">
         <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
         <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
         <ButtonWhite btnText="Afdelinger" route="/groups"/>

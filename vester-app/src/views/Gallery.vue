@@ -3,7 +3,7 @@
 
         <v-container fluid class="section-gallery" style="max-width: unset; margin:0;" >
             <v-row align="center">
-            <v-col lg="5" sm="12" class="gal-container" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <v-col lg="5" sm="12" class="gal-container" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <Title color="#303960" ttlText="Gallery"/>
                 <div id="button-gallery">
                                     <v-container id="component" >
@@ -197,7 +197,7 @@
 
         <v-container fluid class="section-gallery" id="external" style="max-width: unset; margin:0;">
             <v-row align="center">
-                <v-col lg="12" sm="12" align="center"  data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <v-col lg="12" sm="12" align="center"  data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h1>External websites with pictures from our scouts meetings!</h1>
                 </v-col>
             </v-row>

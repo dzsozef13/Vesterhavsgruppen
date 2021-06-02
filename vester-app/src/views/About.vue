@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-      <v-container fluid class="section-2" style="max-width: unset;">
+      <v-container fluid class="section-ab" style="max-width: unset;">
         <v-row align="center" >
           <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <Title color="#303960" ttlText="About Us"/>
@@ -15,7 +15,7 @@
         </v-row>
       </v-container>
 
-      <v-container fluid class="section-2" style="max-width: unset; padding-bottom: 25vh">
+      <v-container fluid class="section-ab" style="max-width: unset; padding-bottom: 25vh">
         <v-row >
           <v-col lg="12" sm="12" >
             <h1 id="goals-title">Nogle af vores mål er</h1>
@@ -26,7 +26,7 @@
         </v-row>
       </v-container>
 
-        <v-container fluid class="section-2 dark" style="max-width: unset; margin:0; background-color:#303960;" >
+        <v-container fluid class="section-ab dark" style="max-width: unset; margin:0; background-color:#303960;" >
           <v-row align="center">
             <v-col lg="4" md="6" sm="12" align="center">
               <div class="main-img" >
@@ -43,10 +43,10 @@
           </v-row>
         </v-container>
 
-        <v-container fluid class="section-2" style="max-width: unset;">
-            <v-row sm="12">
-              <v-col lg="12" sm="12">
-                <Title color="#303960" ttlText="Vi handler og udvikler spejderne via fokusområderne "/>
+        <v-container fluid class="section-ab" style="max-width: unset;">
+            <v-row sm="12" align="center">
+              <v-col lg="12" sm="12" >
+                <Title  color="#303960" ttlText="Vi handler og udvikler spejderne via fokusområderne "/>
               </v-col>
               <v-col lg="6" sm="12" >
                 <p id="list" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -56,17 +56,19 @@
                   <br>- Spejdere for en øget integration i samfundet.
                 </p>
               </v-col>
-              <v-col lg="6" >
-                <div class="sticky-note">
+              <v-col lg="6" align="center">
+                <div class="sticky-note-1">
                 <v-img  class="tape" contain :src="require(`@/assets/tape.svg`)"/>
-
+                <h3>Vil du prøve nogle af de ting, vi laver til spejdermøderne?</h3>
+                <p>Så kig forbi til et af vores spejdermøder, som passer til dig. Alle er velkomne, børn i alle aldre og forældre <br><br> <strong>Kontakt:</strong>  kontakt@vesterhavsgruppen.dk</p>
+                <v-img  class="bad" contain :src="require(`../assets/badge-forest.svg`)"/>
                 </div>
 
               </v-col>
             </v-row>
         </v-container>
 
-        <v-container fluid class="section-2 dark" id="flex-exepction" style="max-width: unset; background-color:#303960;">
+        <v-container fluid class="section-ab dark" id="flex-exepction" style="max-width: unset; background-color:#303960;">
           <v-row >
             <v-col lg="10" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
               <Title color="#eee" ttlText="Kontingent"/>
@@ -123,7 +125,7 @@ export default {
   padding: 10vh 5vw 10vh 10vw;
 }
 
-.section-2 {
+.section-ab {
   @include section-about();
   background-color: #eee;
   color: #303960;
@@ -156,26 +158,25 @@ export default {
   color: #637CDF;
 }
 
-
-
 #list{
   font-size: 24px;
   line-height: 3;
   color: #303960;
+
 }
 #desktop-padding{
   margin-right: 150px;
 }
-.sticky-note {
+.sticky-note-1 {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
-  height: auto;
+  height: 70vh;
   max-width: 440px;
   min-width: 250px;
   padding: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   background-color: white;
 
   h1 {
@@ -208,6 +209,12 @@ export default {
     margin: -50px 0 0 120px;
     width: 100px;
   }
+  .bad{
+
+
+    width: 200px;
+    margin-left: 5vw;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -219,8 +226,8 @@ export default {
   margin-right: 0px;
 }
 
-  .section-2{
-    padding: 10vh 5vw 10vh 5vw;
+  .section-ab{
+    padding: 5vh 5vw 5vh 5vw;
   }
   #goals-title{
 

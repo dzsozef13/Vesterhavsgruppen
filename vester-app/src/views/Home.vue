@@ -23,7 +23,7 @@
   <v-container fluid style="max-width: unset; margin:0; padding:0;">
     <v-row>
       <v-col lg="12" id="video-container" style="padding:0;">
-        <video id="video" src="@/assets/intro_video.mp4" playsinline loop muted autoplay></video>
+        <video id="video" src="@/assets/vester_small.mp4" playsinline loop muted autoplay></video>
         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Sg_OAMB6NY" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe> -->
         <!-- <div id="gradient"></div> -->
       </v-col>

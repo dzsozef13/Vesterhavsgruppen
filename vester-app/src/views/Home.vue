@@ -27,11 +27,14 @@
   <v-container fluid style="max-width: unset; margin:0; padding:0;">
     <v-row>
       <v-col lg="12" id="video-container" style="padding:0;">
-        <video id="video" src="@/assets/intro_video.mp4" playsinline loop muted autoplay></video>
+        <video id="video" src="@/assets/vester_small.mp4" playsinline loop muted autoplay></video>
         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Sg_OAMB6NY" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe> -->
         <!-- <div id="gradient"></div> -->
       </v-col>
     </v-row>
+    <div id="mute-button">
+      <v-btn id="mute-icon" v-on:click="toggleMute()"><v-img :src="require('@/assets/sound_icon.svg')"></v-img></v-btn>
+    </div>
   </v-container>
 
   <v-container fluid class="section-2 dark" style="max-width: unset; margin:0;">
@@ -133,6 +136,11 @@ export default {
 
                 layer.style.transform = `translateX(${this.x}px) translateY(${this.y}px)`
             })
+        },
+
+        toggleMute: function() {
+          let video = document.getElementById('video')
+          video.muted = !video.muted;
         }
     },
     mounted() {
@@ -177,6 +185,18 @@ export default {
   z-index: 1;
 }
 
+#mute-button {
+  position: absolute;
+  right: 0;
+  margin: -50px 24px auto auto;
+  
+  #mute-icon {
+    background: none;
+    box-shadow: none;
+    z-index: 799;
+  }
+}
+
 #scouts{
 
   z-index: 10;
@@ -202,12 +222,14 @@ export default {
 #video-container {
   display: flex;
   align-content: center;
+  height: max-content;
 
   #video {
     height: auto;
     width: 100%;
   }
 }
+
 .wood{
   height: 100vh ;
   width: 100vw ;
@@ -252,15 +274,10 @@ export default {
     padding-right: 24px;
   }
 
-  #main{
-    display: none;
-  }
   #dark{
     height: max-content;
   }
-  #gradient{
-    display: none;
-  }
+
   #scouts{
 
   z-index: 10;

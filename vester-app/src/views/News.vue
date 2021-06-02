@@ -6,7 +6,7 @@
       <v-col lg="6" sm="12" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <Title color="#303960" ttlText="Nyheder"/>
         <Paragraph color="#303960" prgText="On this version of the page you can find main news, upcoming events and schedules for members of Vesterhavsgruppen!"/>
-        <ButtonBlue btnText="Kalendar" route="/calendar"/>
+        <ButtonBlue btnText="Kalendar" route="/schedule"/>
       </v-col>
       <v-col lg="6" sm="12">
           <ImageFrame ttlText='"News' filename="news.jpg"/>

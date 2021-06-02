@@ -53,7 +53,7 @@
         <v-col lg="7" sm="12" class="column-footer">
           <div id="sponsor">
             <v-img id="sponsor-logo" :src="require('../src/assets/ok-logoo.svg')"></v-img>
-            <h1 id="pad">Vores sponsorer</h1>
+            <a id="sponsorer" href="https://www.ok.dk/">Vores sponsorer</a>
           </div>
           <p>Hver gang nogen bestiller et OK-kort gennem os og hver gang man tanker benzin eller diesel på et kort, der er tilknyttet vores aftale.
             Hvis du er interesseret i at støtte os på denne måde, kan du skrive til inge.thisgaard@mail.dk eller tale med en leder til vores spejdermøder.</p>
@@ -172,6 +172,13 @@ export default {
     padding-left: 2vw;
     text-decoration: none;
     color: #303960;
+  }
+    #sponsorer{
+    padding-left: 2vw;
+    text-decoration: none;
+    font-size: 30px;
+    color: #303960;
+    font-family: 'Merriweather', serif;
   }
   #sponsor-logo{
     width: 20vh;

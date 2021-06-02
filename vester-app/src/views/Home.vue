@@ -82,8 +82,8 @@
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true">
-        <Title color="#eee" ttlText="Vesterhavsgruppen er en gammel gruppe i Esbjerg."/>
-        <Paragraph color="#eee" prgText="Vi dækker hele Esbjerg by samt Skads/Andrup, Tjæreborg, Tarp/Bryndum områderne. Vi er en del af DDS - Det Danske Spejderkorps og Horns Rev Division. I DDS arbejder vi ud fra spejder ideen, der blev grundlagt af Lord "/>
+        <Title color="#eee" ttlText="Vesterhavsgruppen er delt ind i grupper baseret på alder, tilsammen er der 5 af dem!"/>
+        <Paragraph color="#eee" prgText="Hver af disse grupper har deres egne møder og aktiviteter udfra deres alder og ture. Klik på knappen nedenunder, for at lære vores grupper bedre at kende, og finde kontaktinformationer til lederne! "/>
         <ButtonWhite btnText="Afdelinger" route="/groups"/>
       </v-col>
       <v-col lg="4" sm="12">

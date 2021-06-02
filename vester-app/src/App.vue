@@ -44,7 +44,8 @@
               <h1>Følg os!</h1>
               <div id="fb">
               <v-icon style="font-size: 3em; color: #637CDF;">fab fa-facebook</v-icon>
-              <p id="pad">FACEBOOK</p>
+              <a id="pad" href="https://www.facebook.com/Vesterhavsgruppen-DDS-908378059235877/">FACEBOOK</a>
+              
               </div>
 
             
@@ -169,6 +170,8 @@ export default {
   }
   #pad{
     padding-left: 2vw;
+    text-decoration: none;
+    color: #303960;
   }
   #sponsor-logo{
     width: 20vh;

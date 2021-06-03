@@ -326,7 +326,7 @@ export default {
       ],
       dec: [
         {
-          name: 'No events',
+          name: 'Ingen begivenheder',
           date: '-',
           groups: '-'
         }

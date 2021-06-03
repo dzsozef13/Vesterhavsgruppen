@@ -6,9 +6,9 @@
     </v-container>
     <v-container id="nav" style="max-width: unset;">
 
-      <div>
+      <router-link to="/">
         <v-img width="250px" include id="logo" :src="require('./assets/vester_logo.png')"></v-img>
-      </div>
+      </router-link>
       <div class="hidden-sm-and-down links">
         <router-link :to= links.route01 >Hjem</router-link>
         <router-link :to= links.route02 >Galleri</router-link>

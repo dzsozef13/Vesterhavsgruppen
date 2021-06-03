@@ -7,7 +7,7 @@
     <v-container id="nav" style="max-width: unset;">
 
       <div>
-        <v-img width="250px" id="logo" :src="require('./assets/logo2.svg')"></v-img>
+        <v-img width="250px" include id="logo" :src="require('./assets/vester_logo.png')"></v-img>
       </div>
       <div class="hidden-sm-and-down links">
         <router-link :to= links.route01 >Hjem</router-link>
@@ -79,7 +79,7 @@ export default {
         route03: "/contact",
       },
       viewChanger: {
-        text: "For medlemmer",
+        text: "For Medlemmer",
         index: 0,
       }
     }
@@ -94,14 +94,14 @@ export default {
         console.log("yay");
         this.$router.push("/news");
         this.links.route01 = "/news";
-        this.viewChanger.text = "For besøgende";
+        this.viewChanger.text = "For Besøgende";
         this.viewChanger.index = 1;
       }
       else {
         console.log("shehs");
         this.$router.push("/");
         this.links.route01 = "/";
-        this.viewChanger.text = "For medlemmer";
+        this.viewChanger.text = "For Medlemmer";
         this.viewChanger.index = 0;
       }
       

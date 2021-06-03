@@ -7,7 +7,7 @@
     <v-container id="nav" style="max-width: unset;">
 
       <div>
-        <v-img width="240px" id="logo" :src="require('./assets/logo.svg')"></v-img>
+        <v-img width="250px" id="logo" :src="require('./assets/logo2.svg')"></v-img>
       </div>
       <div class="hidden-sm-and-down links">
         <router-link :to= links.route01 >Hjem</router-link>

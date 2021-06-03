@@ -128,7 +128,6 @@ export default {
   // -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   overflow: hidden;
-  cursor: require('./assets/knife-cursor.svg');
 }
 #footer{
     background-color: #eee;
